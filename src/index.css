@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'nassim';
+    src: url('./Assets/VxBas.ttf') format('truetype');
+    font-weight: normal;
+}
+
+.nassim {
+    font-family: 'nassim' !important;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}

@@ -1,0 +1,35 @@
+body{
+    margin: 0!important;
+    text-align:"justify";
+}
+p{
+    margin: 0 5vw;
+    font-family: 'vazir';
+    font-size: large;
+}
+h1{
+    font-size: 1.3rem;
+}
+.list{
+    margin-left: 0!important;
+}
+.starter{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(232,249,253,1) 100%); 
+
+}
+.blue{
+    background: #e8f9fd; 
+}
+.purple{
+    background: rgb(232,249,253);
+    background: linear-gradient(180deg, rgba(232,249,253,1) 41%, rgba(229,234,245,1) 100%);
+}
+strong{
+    font-size: 1.5rem;
+    line-height: 3em;
+}
+.ending{
+    background: rgb(229,234,245);
+    background: linear-gradient(180deg, rgba(229,234,245,1) 41%, rgba(255,255,255,1) 100%);
+}

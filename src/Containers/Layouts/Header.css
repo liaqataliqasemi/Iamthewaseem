@@ -1,0 +1,139 @@
+  .dropbtn{
+    background-color: transparent;
+    color: #023B59;
+    margin: 2vh;
+    font-family: 'titr'!important;
+    text-transform: unset!important;
+    font-weight: 300;
+    border: none;
+    font-size: 20px;
+  }
+  @font-face {
+    font-family: 'nassim';
+    src: url('../Assets/VxBas.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Vazir';
+    src: url('../Assets/Vazir.ttf') format('truetype');
+    src: url('../Assets/Vazir.woff') format('woff');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'titr';
+    src: url('../Assets/BTitrBold.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+
+  .nassim {
+    font-family: 'nassim' !important;
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  .titr {
+    font-family: 'titr' !important;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    color: '#023B59';
+  }
+
+  .center {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 50%;
+  }
+  
+  .vazir {
+    font-family: 'Vazir' !important;
+    font-size: 0.9em;
+    line-height: 1.2em;
+  }
+
+  .vazirchucha {
+    font-family: 'Vazir' !important;
+    font-size: 0.7em;
+    line-height: 1.2em;
+  }
+
+  a{
+    text-decoration: none;
+  color:#023B59!important }
+
+  a:active{
+    color: #4cbfa6; font-weight: 500
+  }
+
+  a:hover{
+    color: #4cbfa6!important; font-weight: 500
+  }
+
+  .dropbtn{
+    border: none;
+    color: #023b59;
+    font-family: 'titr' !important;
+  }
+  .dropbtn:hover{
+    border: none;
+    color: #4cbfa6;
+    font-family: 'titr' !important;
+  }
+
+  .dropbtn:active {
+    border: none;
+    color: #4cbfa6;
+    font-family: 'nassim' !important;
+  }
+
+  .dropbtn:visited {
+    border: none;
+    color: #78909c;
+    font-family: 'nassim' !important;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-family: 'nassim'!important;
+    font-weight: 300;
+    min-width: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } 
+
+  .dropdown-subcontent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    min-width: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-Left: 15px;
+  }
+  
+  .dropdown-content a {
+    font-family: 'ubuntu';
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover{font-weight: 500}
+  
+  .dropdown:hover .dropdown-content {display: block}
+
+  .dropdown:hover .dropbtn>a {color: #78909c;}
