@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/iamthewaseem/static/css/main.c64d475f.chunk.css",
+    "main.js": "/iamthewaseem/static/js/main.4f2bb348.chunk.js",
+    "main.js.map": "/iamthewaseem/static/js/main.4f2bb348.chunk.js.map",
+    "runtime-main.js": "/iamthewaseem/static/js/runtime-main.113b43c8.js",
+    "runtime-main.js.map": "/iamthewaseem/static/js/runtime-main.113b43c8.js.map",
+    "static/js/2.e4a4cabf.chunk.js": "/iamthewaseem/static/js/2.e4a4cabf.chunk.js",
+    "static/js/2.e4a4cabf.chunk.js.map": "/iamthewaseem/static/js/2.e4a4cabf.chunk.js.map",
+    "index.html": "/iamthewaseem/index.html",
+    "static/css/main.c64d475f.chunk.css.map": "/iamthewaseem/static/css/main.c64d475f.chunk.css.map",
+    "static/js/2.e4a4cabf.chunk.js.LICENSE.txt": "/iamthewaseem/static/js/2.e4a4cabf.chunk.js.LICENSE.txt",
+    "static/media/Header.css": "/iamthewaseem/static/media/VxBas.9b22806d.ttf",
+    "static/media/logos.3d03ffc1.jpg": "/iamthewaseem/static/media/logos.3d03ffc1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.113b43c8.js",
+    "static/js/2.e4a4cabf.chunk.js",
+    "static/css/main.c64d475f.chunk.css",
+    "static/js/main.4f2bb348.chunk.js"
+  ]
+}
