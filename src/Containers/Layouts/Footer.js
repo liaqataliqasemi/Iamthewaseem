@@ -12,7 +12,7 @@ const str = new Date().toLocaleDateString('fa-IR');
 function Copyright() {
     return (
       <Typography variant="inherit" style={{color: '#023b59', fontFamily: 'nassim', fontSize: '18px'}}>
-         کلیه حقوق این وب سایت متعلق به انتشارات انسان می باشد 
+         کلیه حقوق این وب‌سایت متعلق به انتشارات انسان می باشد.
         {' ©  '}
         {' '}
         {str} {' '}  
@@ -39,6 +39,7 @@ const Footer = () => {
                 <Typography style={{color: '#112D4E', fontFamily: 'titr', fontSize: '2em' }}>انتشــــارات انسان </Typography> &nbsp;
               </div>
               <div className="footercontainer">
+              <div><a href="/">خانه</a></div>
                 <div><a href="/Books">کتاب ها</a></div>
                 <div><a href="/Author">نویسنده</a></div>
                 <div><a href="/Buy">خرید کتاب</a></div>
@@ -50,10 +51,10 @@ const Footer = () => {
             <div style={{textAlign: 'center'}}>
               <Typography  style={{color: '#023b59', fontFamily: 'nassim', fontSize: '1.2em' , lineHeight: '2em', marginBottom: '1.5rem'}}>ما را در صفحات اجتماعی دنبال کنید!</Typography>
                 <div className="footercontainer2">
-                  <a href="https://www.facebook.com/Ensan-Publishers-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%86%D8%B3%D8%A7%D9%86-106264118730722"><FacebookRoundedIcon style={{color: '#4267B2', margin: '0 0.2em', fontSize: '2.5em'}} /></a>&nbsp;
+                  <a href="https://www.facebook.com/Ensan-Publishers-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%86%D8%B3%D8%A7%D9%86-106264118730722" target="_blank"><FacebookRoundedIcon style={{color: '#4267B2', margin: '0 0.2em', fontSize: '2.5em'}} /></a>&nbsp;
                   {/* <a href="https://www.Instgram.com"><InstagramIcon style={{color: 'crimson ', margin: '0 0.2em', fontSize: '2.5em'}}/></a>&nbsp; */}
-                  <a href="https://twitter.com/EnsanPublishers"> <TwitterIcon style={{color: '#00acee ', margin: '0 0.2em', fontSize: '2.5em'}}/></a>&nbsp;
-                  <a href="https://www.linkedin.com/company/ensan-publishers/"><LinkedInIcon style={{color: '#0e76a8 ', margin: ' 0 0.2em', fontSize: '2.5em'}}/></a>&nbsp;
+                  <a href="https://twitter.com/EnsanPublishers" target="_blank"> <TwitterIcon style={{color: '#00acee ', margin: '0 0.2em', fontSize: '2.5em'}}/></a>&nbsp;
+                  <a href="https://www.linkedin.com/company/ensan-publishers/" target="_blank"><LinkedInIcon style={{color: '#0e76a8 ', margin: ' 0 0.2em', fontSize: '2.5em'}}/></a>&nbsp;
                 </div>     
             </div>
           </Grid>

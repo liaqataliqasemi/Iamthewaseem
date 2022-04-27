@@ -130,8 +130,10 @@ export default function CenteredGrid() {
             انسان‌شناس و نظریه‌پرداز اخلاق نوین جهانی و نویسندۀ اثری زیرعنوان ”فراسوی نیک‌و‌بد“<span dir="ltr"> (1886, Jenseits von Gut und Böse) </span>  نیز پیش‌گام است.</p>
            
             <p className={classes.para}>
-                17 اپریل 2022/28 حمل 1401
-            </p>
+    17
+    اپریل 2022 مطابق  28 حمل
+    1401</p>
+
       </div>
         <a href='https://www.amazon.com/dp/0578357828?ref=myi_title_dp'>
           <Grid className={classes.gridSpace} container spacing={2}>

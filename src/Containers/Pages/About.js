@@ -85,8 +85,9 @@ export default function CenteredGrid() {
                       رئیس انتشارات انسان
                   </p>
                   <p className={classes.para}>
-                      17 اپریل 2022/28 حمل 1401
-                  </p>
+    17
+    اپریل 2022 مطابق  28 حمل
+    1401</p>
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
