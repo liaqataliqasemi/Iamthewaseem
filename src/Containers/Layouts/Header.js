@@ -6,23 +6,14 @@ import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { makeStyles } from '@material-ui/core/styles';
-import {IconButton, Drawer, MenuItem, Link} from '@material-ui/core';
+import {IconButton, Drawer } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/CloseRounded';
 import Divider from '@material-ui/core/Divider';
 import MenuIcon from "@material-ui/icons/MenuOpenRounded";
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import './Header.css';
-import logos from './logos.jpg';
-
-function Copyright() {
-  return (
-    <Typography variant="inherit">
-      {'©  '}
-      {' '}
-      {new Date().toLocaleDateString('fa-IR')} {' '} Ensan Publishers 
-    </Typography>
-  );
-};
+import logos from './logo2.png';
+import logos1 from './logo3.png';
 
 //Styles for components
 const useStyles = makeStyles((theme) => ({
@@ -92,7 +83,7 @@ ElevationScroll.propTypes = {
 
 export default function ElevateAppBar(props) {
   
-  const { header,  drawerContainer, paper, root, menuItem, menuItem1} = useStyles();
+  const { header,  drawerContainer, paper,  menuItem}  = useStyles();
   
   const [state, setState] = useState({
     mobileView: false,
@@ -114,9 +105,9 @@ const { mobileView, drawerOpen } = state;
  //Desktop display
   const displayDesktop = () => {
     return (
-    <Toolbar>
+    <Toolbar style={{background: '#112D4E'}}>
     <div>
-      <a href="/"><img src={logos} alt="logo" height='50vh' width = 'auto' style={{flex: 1}}/>&nbsp;</a>     
+      <a href="/"><img src={logos1} alt="logo" height='50vh' width = 'auto' style={{flex: 1}}/>&nbsp;</a>     
     </div>
 {/* menu tabs */}
     <div className='titr' style={{paddingRight: '3vw'}}>
@@ -188,8 +179,8 @@ const { mobileView, drawerOpen } = state;
               <div>
                      
               </div>
-              <div className='center'>
-                <a href="/"><img src={logos} alt="logo" height='40' width = 'auto' marginLeft= 'auto' marginRight= 'auto'/>&nbsp;</a>
+              <div>
+                <a href="/"><img src={logos} alt="logo" height='50' width = 'auto' style={{margin: '0.5em'}}/>&nbsp;</a>
               </div>
               <IconButton style={{marginRight: 'auto'}}
                     {...{

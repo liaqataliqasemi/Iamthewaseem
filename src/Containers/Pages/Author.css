@@ -14,8 +14,8 @@ h1{
     margin-left: 0!important;
 }
 .starter{
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(232,249,253,1) 100%); 
+    background: #DBE2EF;
+    background: linear-gradient(180deg, #fafafa 40%, rgba(232,249,253,1) 100%); 
 
 }
 .blue{
@@ -32,4 +32,39 @@ strong{
 .ending{
     background: rgb(229,234,245);
     background: linear-gradient(180deg, rgba(229,234,245,1) 41%, rgba(255,255,255,1) 100%);
+}
+.header{
+    content:'';
+    min-height: 15vh;
+    background-color: #fafafa;
+    display: 'flex';
+    justify-content: space-between;
+}
+.header2{
+    content:'';
+    min-height: 10vh;
+    background-color: #fafafa;
+    display: 'flex';
+    justify-content: space-between;
+}
+.custom-shape-divider-top-1651047448 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1651047448 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1651047448 .shape-fill {
+    fill: #DBE2EF;
 }

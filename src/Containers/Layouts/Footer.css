@@ -1,7 +1,7 @@
 .main-footer {
     color: whitesmoke;
-    background: rgb(76,191,166);
-    background: linear-gradient(180deg, rgba(76,191,166,1) 0%, rgba(220,225,227,1) 59%, rgba(255,255,255,1) 100%);
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(214,230,242,1) 100%);
     padding: 20px;
     padding-top: 10px!important;
     padding-bottom: 10px!important;
@@ -55,6 +55,7 @@
   content: '';
   min-height: 15vh;
   position: relative;
+  background: white;
 }
 .custom-shape-divider-bottom-1650522109 {
   position: absolute;
@@ -75,5 +76,5 @@
 }
 
 .custom-shape-divider-bottom-1650522109 .shape-fill {
-  fill: #4CBFA6;
+  fill: #d6e6f2;
 }

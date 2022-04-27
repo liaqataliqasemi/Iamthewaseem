@@ -1,6 +1,6 @@
   .dropbtn{
     background-color: transparent;
-    color: #023B59;
+    color: #ffffff!important;
     margin: 2vh;
     font-family: 'titr'!important;
     text-transform: unset!important;
@@ -42,10 +42,11 @@
   }
 
   .center {
-    display: block;
+    display: flex;
     margin-top: auto;
     margin-bottom: auto;
     height: 50%;
+    text-align: center;
   }
   
   .vazir {
@@ -62,30 +63,30 @@
 
   a{
     text-decoration: none;
-  color:#023B59!important }
+  color:#112D4E!important }
 
   a:active{
-    color: #4cbfa6; font-weight: 500
+    color: #3F72AF; font-weight: 500
   }
 
   a:hover{
-    color: #4cbfa6!important; font-weight: 500
+    color: #3F72AF!important; font-weight: 500
   }
 
   .dropbtn{
     border: none;
-    color: #023b59;
+    color: #112D4E;
     font-family: 'titr' !important;
   }
   .dropbtn:hover{
     border: none;
-    color: #4cbfa6;
+    color: #3F72AF;
     font-family: 'titr' !important;
   }
 
   .dropbtn:active {
     border: none;
-    color: #4cbfa6;
+    color: #3F72AF;
     font-family: 'nassim' !important;
   }
 

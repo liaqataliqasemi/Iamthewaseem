@@ -3,7 +3,8 @@ import Grid from '@material-ui/core/Grid';
 import { Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import './Author.css';
-
+import Kawish from '../Component/KawishCard';
+import BookCard from '../Component/Books';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -12,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     },
     h1:{
       fontFamily: 'vazir',
-      padding: '2em 2em 1em 2em',
       textAlign: 'center',
       fontSize: '2rem'
     },
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: 'justify',
       fontSize: '16px',
       fontWeight: 300,
-      padding: '0 10vw',
+      padding: '0 5vw',
       direction: 'ltr'
     },
   }));
@@ -30,17 +30,32 @@ const useStyles = makeStyles((theme) => ({
 const LandingPage = () => {
     const classes = useStyles();
     return(
-        <div spacing={5} className={classes.background}> 
+        <div> 
+            <div style={{background: '#fafafa'}}>
+                <div class="custom-shape-divider-top-1651047448">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+            <div className='header2' style={{background: '#fafafa'}}>
+                <h1 style={{background: '#fafafa'}} className={classes.h1}>زندگی و آثار محترم استاد دکتر سید نورالحق کاوش</h1>  
+            </div>
             <Box display="flex" container flexWrap="wrap" justifyContent="center" spacing={3}>
                 <Grid item xs={12} sm={12} md={12} lg={12}>
-                    <div>
-                        <h1 className={classes.h1}>زندگی و آثار محترم استاد دکتر سید نورالحق کاوش</h1>  
-                    </div>
+                    <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        paddingBottom="2vh"
+                    >
+                        <Kawish/>
+                    </Box>
+                </Grid>
+                <Grid item xs={12} sm={12} md={12} lg={12}>
                     <div className='starter'>
                         <p className={classes.para}>
-                            <strong>1- </strong>
-                            <strong>زندگی:</strong>
-                            <strong></strong>
+                            <strong>زندگی</strong>
                         </p>
                         <p className={classes.para}>
                             سید نورالحق کاوش در چهارم جدی 1330 خورشیدی در قریۀ تلابۀ سفلی ولسوالی انجیل
@@ -126,18 +141,19 @@ const LandingPage = () => {
                             ناگزیر گردید به‌هدف استدام خدمات دانشی-فرهنگی-اش به‌هم‌زبانان‌ برون‌مرزی
                             کشور، بغلان را به‌قصد تاجیکستان ترک گوید.
                         </p>
+                        <p className={classes.para}>
+                            استاد کاوش که پیش از ورود این باره‌اش به تاجیکستان، در محیط‌های آکادمیک این
+                            کشور، شخصیت دانشی-پژوهشی و آزاداندیش شناخته شده بود و دکتری (Ph.D.) در رشتۀ
+                            تاریخ فلسفه را به هم‌یاری آکادمی علوم تاجیکستان از آکادمی علوم مسکو
+                            فدراسیون روسیه حاصل داشته بود، از سوی آکادمی علوم تاجیکستان دعوت گردید به
+                            حیث عضو ارشد علمی در انستیتوت فلسفه و حقوق این آکادمی به کار رسمی پردازد و
+                            افزون بر آن به دعوت‌های دانش‌گاه دولتی تاجیکستان و دانش‌گاه آموزگاری
+                            دوشنبه، استاد کاوش فعالیت‌های آکادمیک-اش را در سه مرکز اساسی دانشی-پژوهشی
+                            مهم تاجیکستان ادامه داد.
+                        </p>
+
                     </div>
                     <div className='blue'>
-                        <p className={classes.para}>
-                                استاد کاوش که پیش از ورود این باره‌اش به تاجیکستان، در محیط‌های آکادمیک این
-                                کشور، شخصیت دانشی-پژوهشی و آزاداندیش شناخته شده بود و دکتری (Ph.D.) در رشتۀ
-                                تاریخ فلسفه را به هم‌یاری آکادمی علوم تاجیکستان از آکادمی علوم مسکو
-                                فدراسیون روسیه حاصل داشته بود، از سوی آکادمی علوم تاجیکستان دعوت گردید به
-                                حیث عضو ارشد علمی در انستیتوت فلسفه و حقوق این آکادمی به کار رسمی پردازد و
-                                افزون بر آن به دعوت‌های دانش‌گاه دولتی تاجیکستان و دانش‌گاه آموزگاری
-                                دوشنبه، استاد کاوش فعالیت‌های آکادمیک-اش را در سه مرکز اساسی دانشی-پژوهشی
-                                مهم تاجیکستان ادامه داد.
-                            </p>
                             <p className={classes.para}>
                                 استاد کاوش که با همۀ انتظارات در تغییر و تحول اوضاع افغانستان به‌سوی
                                 بهبودی، بالاخره دریافت که حداقل در حال حاضر روزنه‌ای از تحقق چنین امیدی
@@ -148,12 +164,13 @@ const LandingPage = () => {
                                 ناراحتی‌های ناشی از به خون‌غرقه‌شدن میهن-اش افغانستان رنج روزگار تحمل
                                 می‌کند و با این همۀ آلام، هم‌چنان مشغول آفرینش‌های علمی-فرهنگی است.
                             </p>
+                                <BookCard/>
                             <p className={classes.para}>
-                                <strong>2- </strong>
-                                <strong>آثار:</strong>
+                                {/* <strong>2- </strong> */}
+                                <strong>آثار</strong>
                             </p>
                             <p className={classes.para}>
-                                <strong> الف) کتب و رسالات پژوهشی:</strong>
+                                <h3> الف) کتب و رسالات پژوهشی:</h3>
                             </p>
                             <p className={classes.para}>
                                 1- کیفیت و انتشار اسلام در شرق و غرب، 1973/1352 (چاپ‌ناشده)
@@ -199,6 +216,9 @@ const LandingPage = () => {
                             <p className={classes.para}>
                                 11- انسان کامل از دیدگاه عرفا، 1995/1374، (چاپ‌ناشده)
                             </p>
+
+                        </div>
+                    <div className='purple'>
                             <p className={classes.para}>
                                 12- تحقیق پیرامون تعلیمات اساسی ولایت بغلان (به خواهش مؤسسه بین‌المللی
                                 آکسفام) 1995/1374، (چاپ‌ناشده)
@@ -233,7 +253,7 @@ const LandingPage = () => {
                                 خودسازی) بیدل، ”انتشارات انسان“ (ماساچوستس/آمریکا) 2022/1400
                             </p>
                             <p className={classes.para}>
-                                <strong>ب) کتب درسی:</strong>
+                                <h3>ب) کتب درسی:</h3>
                             </p>
                             <p className={classes.para}>
                                 1- عقاید اسلامی (الاهیات)، کتاب درسی سمستر اول سال اول فاکولتۀ شرعیات
@@ -289,10 +309,8 @@ const LandingPage = () => {
                                 12- منطق، کتاب درسی مضمون منطق برای انستیتوت‌ها و فاکولته‌های مختلف
                                 دانش‌گاه‌های تاجیکستان، 1999-1998/1379-1378
                             </p>
-                        </div>
-                    <div className='purple'>
                     <p className={classes.para}>
-                        <strong>ج) مقالات تحقیقی:</strong>
+                        <h3>ج) مقالات تحقیقی:</h3>
                     </p>
                     <p className={classes.para}>
                         1- پژوهشی پیرامون قیاس و استقرأ؛ شمارۀ سوم، سال هفتم، 1987/1366، مجلۀ
@@ -375,7 +393,7 @@ const LandingPage = () => {
                         انستیتوت فلسفه و حقوق آکادمی علوم تاجیکستان 2000/1379
                     </p>
                     <p className={classes.para}>
-                        <strong>د) ترجمه از عربی به فارسی:</strong>
+                        <h3>د) ترجمه از عربی به فارسی:</h3>
                     </p>
                     <p className={classes.para}>
                         1- نظریۀ شناخت، نگارش دکتر زکی نجیب محمود، مرکز تحقیقات علوم اسلامی وزارت
@@ -394,7 +412,7 @@ const LandingPage = () => {
                     </div>
                     <div className='ending'>
                     <p className={classes.para}>
-                        <strong>هـ) از دیگر فعالیت‌های علمی-فرهنگی:</strong>
+                        <strong style={{fontSize: '1.2em'}}>هـ) از دیگر فعالیت‌های علمی-فرهنگی:</strong>
                     </p>
                     <p className={classes.para}>
                         استاد کاوش افزون بر تدریس و تحقیق علمی دانشگاهی-اش، در سایر پهنه‌های علوم
