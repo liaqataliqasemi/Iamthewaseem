@@ -1,0 +1,35 @@
+.header{
+    content:'';
+    min-height: 2vh;
+    background-color: #DBE2EF!important;
+    display: 'flex';
+    justify-content: space-between;
+}
+.header2{
+    content:'';
+    min-height: 2vh;
+    background-color: white;
+    display: 'flex';
+    justify-content: space-between;
+}
+.custom-shape-divider-top-1651038926 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1651038926 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-top-1651038926 .shape-fill {
+    fill: #DBE2EF;
+}
+
+
