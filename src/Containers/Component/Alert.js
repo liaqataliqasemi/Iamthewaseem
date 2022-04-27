@@ -9,7 +9,8 @@ const useStyles = makeStyles({
         lineHeight: '2.4em',
         textAlign: 'justify',
         fontSize: '16px',
-        fontWeight: 300
+        fontWeight: 300,
+        color: 'black'
       },
       cookieAlert: {
       "& .MuiAlert-icon": {
@@ -17,7 +18,7 @@ const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        color: '#fff!important'
+        color: 'black!important'
       }
     }
   });
@@ -26,7 +27,7 @@ export default function BasicAlerts() {
     const classes = useStyles();
   return (
     <Stack sx={{ width: '100%', "& .MuiAlert-filled":{
-        backgroundColor: '#112D4E'
+        backgroundColor: '#D3DEDC'
     } }} spacing={2}>
       <Alert className={classes.cookieAlert} variant="filled" severity="warning">
         <p className={classes.para}>

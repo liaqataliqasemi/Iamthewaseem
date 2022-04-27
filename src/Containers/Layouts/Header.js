@@ -105,7 +105,7 @@ const { mobileView, drawerOpen } = state;
  //Desktop display
   const displayDesktop = () => {
     return (
-    <Toolbar style={{background: '#112D4E'}}>
+    <Toolbar style={{background: '#005691'}}>
     <div>
       <a href="/"><img src={logos1} alt="logo" height='50vh' width = 'auto' style={{flex: 1}}/>&nbsp;</a>     
     </div>
@@ -154,7 +154,7 @@ const { mobileView, drawerOpen } = state;
     
       return (
         <div>
-        <Toolbar>
+        <Toolbar style={{background: '#001E6C'}}>
           <IconButton
             {...{
               edge: "start",
@@ -164,7 +164,7 @@ const { mobileView, drawerOpen } = state;
               onClick: handleDrawerOpen,
             }}
           >
-            <MenuIcon style={{color: '#023B59'}}/>
+            <MenuIcon style={{color: '#fff'}}/>
           </IconButton>
         {/* Drawer Design */}
           <Drawer 
@@ -223,7 +223,7 @@ const { mobileView, drawerOpen } = state;
                 <Divider variant="middle" /> 
                 <Typography style={{fontFamily: 'nassim', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کلیه حقوق این ویب سایت متعلق به انتشارات انسان می‌باشد.</Typography>
           </Drawer>
-              <a href="/"><img src={logos} alt="logo" height='50vh' width = 'auto' /></a> &nbsp;
+              <a href="/"><img src={logos1} alt="logo" height='50vh' width = 'auto' /></a> &nbsp;
         </Toolbar>
         </div>
       );

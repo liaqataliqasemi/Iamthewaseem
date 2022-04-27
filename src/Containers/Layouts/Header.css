@@ -70,7 +70,7 @@
   }
 
   a:hover{
-    color: #3F72AF!important; font-weight: 500
+    color: #4ECCA3!important; font-weight: 500
   }
 
   .dropbtn{
@@ -80,7 +80,7 @@
   }
   .dropbtn:hover{
     border: none;
-    color: #3F72AF;
+    color: #4ECCA3!important;
     font-family: 'titr' !important;
   }
 
