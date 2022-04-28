@@ -1,0 +1,28 @@
+
+body{
+    margin: 0;
+}
+.photo {
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    height: 22vh;
+    width: auto;
+    vertical-align: middle;
+    border-style: none;
+    text-align: center;
+  }
+
+ .middle{
+    Display: flex;
+    Align-Items: center;
+    Justify-Content: center; 
+    padding-top: 15px;
+}
+
+.TextField {
+    font-family: 'nassim'
+}
+
+.input-group:focus-within label {
+    color: red !important;
+  }
