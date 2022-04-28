@@ -53,6 +53,10 @@ export default function CenteredGrid() {
               جهان‌شناختی، و انسان‌شناختی بیدل آشنا می‌شود. این‌ مجلد حاوی 562 صفحه است
               که در سال 1389/2010 به‌چاپ رسیده است.
           </p>
+          <p className={classes.para} style={{marginBottom: '0!important', color: '#3F72AF'}}>
+              برای خرید مجلد اول ”انسان‌شناختی بیدل“ به‌‌آدرس ایمیل و یا شماره تلفن
+              انتشارات انسان در تماس شوید. 
+          </p>
       </div>
           <Grid className={classes.gridSpace} container spacing={2}>
             <Grid item xs={12} sm={12} md={4} lg={4}>
@@ -68,15 +72,12 @@ export default function CenteredGrid() {
             <Grid item xs={12} sm={12} md={4} lg={4}>
               <Box
                 display="flex"
+                wrap= 'column'
                 justifyContent="center"
                 alignItems="center"
-                padding="2vh 0"
+                padding="0"
               >
-                <a href='http://www.amazon.com'><img alt="purchase" src={purchase} height="500vh" width="100%"/>
-                <p className={classes.para}>
-                خریداری کتاب از آمازون
-                </p>
-                </a>
+                <img alt="purchase" src={purchase} height="500vh" width="100%" top="0!important"/>
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>

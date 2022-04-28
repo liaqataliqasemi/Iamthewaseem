@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '1em 0 0 0',
     textAlign: 'center',
     fontSize: '3em',
-    color: '#3F72AF'
+    color: '#fff'
   },
   para: {
     fontFamily: 'vazir',

@@ -14,6 +14,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import './Header.css';
 import logos from './logo2.png';
 import logos1 from './logo3.png';
+import Button from '@mui/material/Button';
 
 //Styles for components
 const useStyles = makeStyles((theme) => ({
@@ -82,16 +83,12 @@ ElevationScroll.propTypes = {
 };
 
 export default function ElevateAppBar(props) {
-  
   const { header,  drawerContainer, paper,  menuItem}  = useStyles();
-  
-  const [state, setState] = useState({
+    const [state, setState] = useState({
     mobileView: false,
     drawerOpen: false
   })
-
 const { mobileView, drawerOpen } = state;
-
   useEffect(() => {
     const setResponsiveness = () => {
       return window.innerWidth < 1200
@@ -112,7 +109,7 @@ const { mobileView, drawerOpen } = state;
 {/* menu tabs */}
     <div className='titr' style={{paddingRight: '3vw'}}>
         <div className="dropdown">
-            <a href="/Books" className="dropbtn">کتاب ها</a>
+            <Button style={{fontSize: '19px', marginRight: '15px'}} href="/Books" className="dropbtn">کتاب ها</Button>
                 <div className="dropdown-content">
                         <a className='vazir' href="/Ensan_shinakhti_part_one">انسان‌شناختی بیدل مجلد اول</a>   
                         <a className='vazir' href="/Ensan_shinakhti_part_two">انسان‌شناختی بیدل مجلد دوم</a>
@@ -121,23 +118,23 @@ const { mobileView, drawerOpen } = state;
                 </div>
         </div>
         <div className="dropdown">
-            <button className="dropbtn">نویسنده</button>
+            <Button style={{fontSize: '19px', marginRight: '15px'}} href="/Author" className="dropbtn">نویسنده</Button>
                 <div className="dropdown-content">
                         <a className='vazir' href="/Author">دکتر سید نورالحق کاوش</a>                           
                 </div>
         </div>
         <div className="dropdown">
-            <a href="/buy" className="dropbtn">خرید کتاب</a>
+            <Button href="/buy" style={{fontSize: '19px', marginRight: '15px'}} className="dropbtn">خرید کتاب</Button>
             <div className="dropdown-content">
                         <a className='vazir' href="/Amazon">خرید کتاب از آمازون</a>
                         <a className='vazir' href="/PayPal">خرید کتاب با پی‌پال</a>
                 </div>
         </div>
         <div className="dropdown">
-            <a  href="/AboutUs" className="dropbtn">درباره‌ی ما</a>
+            <Button  style={{fontSize: '19px', marginRight: '15px'}} href="/AboutUs" className="dropbtn">درباره‌ی ما</Button>
         </div>
         <div className="dropdown">
-            <a href="/ContactUs" className="dropbtn">تماس با ما</a>
+            <Button style={{fontSize: '19px', marginRight: '15px'}} href="/ContactUs" className="dropbtn">تماس با ما</Button>
         </div>
     </div>
     </Toolbar>
@@ -194,7 +191,7 @@ const { mobileView, drawerOpen } = state;
               </IconButton>
               </div>
               <Divider variant="middle" />
-              <a href="/books"><Typography style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کتاب ها</Typography></a>
+              <Typography style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کتاب ها</Typography>
                 <div className={drawerContainer}>
                   <a className={menuItem} href="/Ensan_shinakhti_part_one">انسان‌شناختی بیدل مجلد اول<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                   <a className={menuItem} href="/Ensan_shinakhti_part_two">انسان‌شناختی بیدل مجلد دوم<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
@@ -221,7 +218,7 @@ const { mobileView, drawerOpen } = state;
                   <Typography style={{fontFamily: 'titr', color: '#023B59', marginLeft: 'auto'}}>تماس با ما</Typography>
                 </a>
                 <Divider variant="middle" /> 
-                <Typography style={{fontFamily: 'nassim', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کلیه حقوق این ویب سایت متعلق به انتشارات انسان می‌باشد.</Typography>
+                <Typography style={{fontFamily: 'nassim', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کلیه حقوق این ویب‌سایت متعلق به انتشارات انسان می‌باشد.</Typography>
           </Drawer>
               <a href="/"><img src={logos1} alt="logo" height='50vh' width = 'auto' /></a> &nbsp;
         </Toolbar>

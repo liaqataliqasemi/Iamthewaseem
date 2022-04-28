@@ -6,10 +6,10 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import SantaClara from '../Assets/SantaClara.jpg';
-import SanJose from '../Assets/SanJose.jpg';
-import Sacramento from '../Assets/Sacramento.jpg';
-import Fresno from '../Assets/Fresno.jpg';
+import BedilVol2 from '../Assets/BedilVol2.jpg';
+import BedilVol3 from '../Assets/BedilVol3.jpg';
+import BedilVol1 from '../Assets/BedilVol1.jpg';
+import BedilVol4 from '../Assets/BedilVol4.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -86,19 +86,19 @@ export default function AutoGrid() {
         <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
         <Grid item xs={12} sm={4} md={2}>
             <Card className={classes.resha}>
-            
                 <CardActionArea>
                 <a href="/Ensan_shinakhti_part_one" className={classes.cityname}>
                     <CardMedia
                     component="img"
                     alt="Contemplative Reptile"
-                    height= "Auto"
-                    image= {Sacramento}
-                    title="Sacramento"
+                    height= "400vh"
+                    width= "auto"
+                    image= {BedilVol1}
+                    title="BedilVol1"
                     />
                     <CardContent>
                     <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                    جلد اول
+                    مجلد اول
                     </Typography>
                     </CardContent>
                     </a>
@@ -112,13 +112,14 @@ export default function AutoGrid() {
                     <CardMedia
                     component="img"
                     alt="Contemplative Reptile"
-                    height= "Auto"
-                    image= {SantaClara}
-                    title="Santa Clara"
+                    height= "400vh"
+                    width= "auto"
+                    image= {BedilVol2}
+                    title="BedilVol2"
                     />
                     <CardContent>
                     <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                    جلد دوم
+                    مجلد دوم
                     </Typography>
                     </CardContent>
                     </a>
@@ -132,13 +133,14 @@ export default function AutoGrid() {
                     <CardMedia
                     component="img"
                     alt="Contemplative Reptile"
-                    height= "Auto"
-                    image= {SanJose}
-                    title="San Jose"
+                    height= "400vh"
+                    width= "auto"
+                    image= {BedilVol3}
+                    title="BedilVol3"
                     />
                     <CardContent>
                     <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                    جلد سوم
+                    مجلد سوم
                     </Typography>
                     </CardContent>
                     </a> 
@@ -152,13 +154,14 @@ export default function AutoGrid() {
                     <CardMedia
                     component="img"
                     alt="Contemplative Reptile"
-                    height= "Auto"
-                    image= {Fresno}
-                    title="Roseville"
+                    height= "400vh"
+                    width= "auto"
+                    image= {BedilVol4}
+                    title="BedilVol4"
                     />
                     <CardContent>
                     <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                    جلد چهارم
+                    مجلد چهارم
                     </Typography>
                     </CardContent>
                     </a> 

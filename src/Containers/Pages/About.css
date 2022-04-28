@@ -1,7 +1,7 @@
 .header{
     content:'';
     min-height: 2vh;
-    background-color: #DBE2EF!important;
+    background-color: #005691!important;
     display: 'flex';
     justify-content: space-between;
 }
@@ -29,7 +29,7 @@
 }
 
 .custom-shape-divider-top-1651038926 .shape-fill {
-    fill: #DBE2EF;
+    fill: #005691;
 }
 
 

@@ -135,7 +135,7 @@ export default function CenteredGrid() {
     1401</p>
 
       </div>
-        <a href='https://www.amazon.com/dp/0578357828?ref=myi_title_dp'>
+        <a target="_blank" rel="noreferrer"  href='https://www.amazon.com/dp/0578357828?ref=myi_title_dp'>
           <Grid className={classes.gridSpace} container spacing={2}>
           <Grid item xs={12} sm={12} md={6} lg={6}>
                 <p className={classes.para2}>

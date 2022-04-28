@@ -2,7 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Alert from '../Component/Alert';
-import BookCard from '../Component/BookCard'
+import BookCard from '../Component/BookCard';
+import SingleBookCard from '../Component/SingleBookCard';
+import Aks1 from '../Assets/BedilVol1.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,6 +51,7 @@ export default function CenteredGrid() {
                 علاقه‌مندان به‌هدف دریافت هریکی از مجلدات اثر  انسان شناختی بیدل به صفحه‌ی خرید کتاب مراجعه بفرمایند.
                 </p>
                 <BookCard/>
+                <SingleBookCard aks={Aks1} title="Bidel Volume no. 1" />
             </Grid>
         </Grid>
       </div>

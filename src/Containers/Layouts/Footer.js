@@ -3,9 +3,11 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 // eslint-disable-next-line
 import InstagramIcon from '@material-ui/icons/Instagram';
+import Logo from '../Layouts/logo2.png';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import { Box } from '@material-ui/core';
 import './Footer.css';
 
 const str = new Date().toLocaleDateString('fa-IR');
@@ -36,7 +38,14 @@ const Footer = () => {
             <Grid item xs={12} sm={12}>
 
               <div style={{textAlign: 'center'}}>
-                <Typography style={{color: '#112D4E', fontFamily: 'titr', fontSize: '2em' }}>انتشــــارات انسان </Typography> &nbsp;
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  padding="2vh 0"
+                >
+                  <img alt="LOGO" src={Logo} height="60vh" width="auto"/>
+                </Box>
               </div>
               <div className="footercontainer">
                 <div><a href="/">خانه</a></div>
@@ -51,10 +60,10 @@ const Footer = () => {
             <div style={{textAlign: 'center'}}>
               <Typography  style={{color: '#023b59', fontFamily: 'nassim', fontSize: '1.2em' , lineHeight: '2em', marginBottom: '1.5rem'}}>ما را در صفحات اجتماعی دنبال کنید!</Typography>
                 <div className="footercontainer2">
-                  <a href="https://www.facebook.com/Ensan-Publishers-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%86%D8%B3%D8%A7%D9%86-106264118730722" target="_blank"><FacebookRoundedIcon style={{color: '#4267B2', margin: '0 0.2em', fontSize: '2.5em'}} /></a>&nbsp;
+                  <a href="https://www.facebook.com/Ensan-Publishers-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%86%D8%B3%D8%A7%D9%86-106264118730722" rel="noreferrer"  target="_blank"><FacebookRoundedIcon style={{color: '#4267B2', margin: '0 0.2em', fontSize: '2.5em'}} /></a>&nbsp;
                   {/* <a href="https://www.Instgram.com"><InstagramIcon style={{color: 'crimson ', margin: '0 0.2em', fontSize: '2.5em'}}/></a>&nbsp; */}
-                  <a href="https://twitter.com/EnsanPublishers" target="_blank"> <TwitterIcon style={{color: '#00acee ', margin: '0 0.2em', fontSize: '2.5em'}}/></a>&nbsp;
-                  <a href="https://www.linkedin.com/company/ensan-publishers/" target="_blank"><LinkedInIcon style={{color: '#0e76a8 ', margin: ' 0 0.2em', fontSize: '2.5em'}}/></a>&nbsp;
+                  <a href="https://twitter.com/EnsanPublishers" target="_blank" rel="noreferrer" > <TwitterIcon style={{color: '#00acee ', margin: '0 0.2em', fontSize: '2.5em'}}/></a>&nbsp;
+                  <a href="https://www.linkedin.com/company/ensan-publishers/" target="_blank" rel="noreferrer" ><LinkedInIcon style={{color: '#0e76a8 ', margin: ' 0 0.2em', fontSize: '2.5em'}}/></a>&nbsp;
                 </div>     
             </div>
           </Grid>

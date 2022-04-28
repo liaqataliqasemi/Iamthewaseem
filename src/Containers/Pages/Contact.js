@@ -34,7 +34,7 @@ export default function CenteredGrid() {
   const classes = useStyles();
   return (
     <div>
-      <h1 className={classes.h1}>دوست داریم بیشتر از شما بشنویم!</h1>
+      <h1 className={classes.h1}>تماس با انتشارات انسان</h1>
       <div className={classes.root}>
         <Paper style={{backgroundColor: '#F9F7F7', margin: '0 2vw', padding: '2em'}} elevation={12} container>
           <Grid className={classes.gridSpace} container spacing={2}>
