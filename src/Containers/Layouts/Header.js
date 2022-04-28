@@ -112,7 +112,7 @@ const { mobileView, drawerOpen } = state;
 {/* menu tabs */}
     <div className='titr' style={{paddingRight: '3vw'}}>
         <div className="dropdown">
-            <button className="dropbtn">کتاب ها</button>
+            <a href="/Books" className="dropbtn">کتاب ها</a>
                 <div className="dropdown-content">
                         <a className='vazir' href="/Ensan_shinakhti_part_one">انسان‌شناختی بیدل مجلد اول</a>   
                         <a className='vazir' href="/Ensan_shinakhti_part_two">انسان‌شناختی بیدل مجلد دوم</a>
@@ -127,7 +127,7 @@ const { mobileView, drawerOpen } = state;
                 </div>
         </div>
         <div className="dropdown">
-            <button className="dropbtn">خرید کتاب</button>
+            <a href="/buy" className="dropbtn">خرید کتاب</a>
             <div className="dropdown-content">
                         <a className='vazir' href="/Amazon">خرید کتاب از آمازون</a>
                         <a className='vazir' href="/PayPal">خرید کتاب با پی‌پال</a>
@@ -194,7 +194,7 @@ const { mobileView, drawerOpen } = state;
               </IconButton>
               </div>
               <Divider variant="middle" />
-              <Typography style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کتاب ها</Typography>
+              <a href="/books"><Typography style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کتاب ها</Typography></a>
                 <div className={drawerContainer}>
                   <a className={menuItem} href="/Ensan_shinakhti_part_one">انسان‌شناختی بیدل مجلد اول<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                   <a className={menuItem} href="/Ensan_shinakhti_part_two">انسان‌شناختی بیدل مجلد دوم<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>

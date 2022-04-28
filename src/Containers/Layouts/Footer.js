@@ -39,7 +39,7 @@ const Footer = () => {
                 <Typography style={{color: '#112D4E', fontFamily: 'titr', fontSize: '2em' }}>انتشــــارات انسان </Typography> &nbsp;
               </div>
               <div className="footercontainer">
-              <div><a href="/">خانه</a></div>
+                <div><a href="/">خانه</a></div>
                 <div><a href="/Books">کتاب ها</a></div>
                 <div><a href="/Author">نویسنده</a></div>
                 <div><a href="/Buy">خرید کتاب</a></div>
