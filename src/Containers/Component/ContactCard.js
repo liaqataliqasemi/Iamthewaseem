@@ -8,6 +8,11 @@ import EmailTwoToneIcon from '@mui/icons-material/EmailTwoTone';
 import CallTwoToneIcon from '@mui/icons-material/CallTwoTone';
 import { Box } from '@material-ui/core';
 import ContactForm from './ContactForm';
+// eslint-disable-next-line
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const useStyles = makeStyles((theme) => ({
     divider: {
@@ -19,20 +24,20 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'nassim',
         fontSize: '2em',
         fontWeight: 1000,
-        padding: '2.5em 0'
+        padding: '0.2em 0',
     },
     paragraph: {
         fontFamily: 'vazir',
         fontSize: '1.6em',
         fontWeight: 500,
-        lineHeight: '4em',
+        lineHeight: '2em',
         color: '#3F72AF'
     },
     paragraph1: {
         fontFamily: 'vazir',
         fontSize: '1.6em',
         fontWeight: 500,
-        lineHeight: '4em',
+        lineHeight: '2em',
         color: '#3F72AF',
         direction: 'ltr!important',
         textAlign: 'left',
@@ -41,8 +46,8 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: 'vazir',
         fontSize: '1.2em',
         fontWeight: 500,
-        lineHeight: '4em',
-        textAlign: 'center'
+        lineHeight: '2em',
+        textAlign: 'left'
     },
     footercontainer2:{
         display: 'flex',
@@ -57,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
       alignItems: "center",
       display: "flex",
       fontFamily: 'nassim',
-      fontSize: '2.5em',
+      fontSize: '2em',
       fontWeight: 1000,
       lineHeight: '2em',
       color: '#112D4E',
@@ -79,6 +84,12 @@ export default function VerticalDividerText() {
     <div>
       <Grid container>
         <Grid item xs>
+          <ContactForm/>
+        </Grid>
+        <Divider className={classes.divider} orientation="vertical" flexItem>
+          انتشارات انسان
+        </Divider>
+        <Grid item xs >
           <Box sx={{ textOverflow: 'ellipsis' }}>
               <p className={classes.wrapIcon} >
                 <LocationCityTwoToneIcon style={{ fontSize: '1.4em'}}/> - 
@@ -105,16 +116,16 @@ export default function VerticalDividerText() {
                   info@ensanpublishers.com
                   </p> 
               </a>
-          </Box>
-        </Grid>
-        <Divider className={classes.divider} orientation="vertical" flexItem>
-          انتشارات انسان
-        </Divider>
-        <Grid item xs >
-          {/* <div style={{justifyContent: 'center'}}>
-              <a href="/"><img src={logos} alt="logo" height='80vh' width = 'auto' style={{flex: 1}}/>&nbsp;</a>     
-          </div> */}
-          <ContactForm/>
+                <p className={classes.header1}>
+                     صفحات اجتماعی        
+                  </p>
+                  <p className={classes.paragraph}>
+                  <a href="https://www.facebook.com/Ensan-Publishers-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%86%D8%B3%D8%A7%D9%86-106264118730722" rel="noreferrer"  target="_blank"><FacebookIcon style={{color: '#4267B2', fontSize: '2.5em'}} /></a>&nbsp;
+                  {/* <a href="https://www.Instgram.com"><InstagramIcon style={{color: 'crimson ', margin: '0 0.2em', fontSize: '2.5em'}}/></a>&nbsp; */}
+                  <a href="https://twitter.com/EnsanPublishers" target="_blank" rel="noreferrer" > <TwitterIcon style={{color: '#00acee ', fontSize: '2.5em'}}/></a>&nbsp;
+                  <a href="https://www.linkedin.com/company/ensan-publishers/" target="_blank" rel="noreferrer" ><LinkedInIcon style={{color: '#0e76a8 ',  fontSize: '2.5em'}}/></a>&nbsp;
+                  </p> 
+            </Box>
         </Grid>
       </Grid>
     </div>

@@ -61,15 +61,6 @@ export default function CenteredGrid() {
             </Grid>
           </Grid>
         </Paper>
-        <div className={classes.paragraph2}>
-        <p className={classes.header1}>
-            ما را در صفحات اجتماعی دنبال کنید.       
-          </p>
-          <a href="https://www.facebook.com/Ensan-Publishers-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%86%D8%B3%D8%A7%D9%86-106264118730722" rel="noreferrer"  target="_blank"><FacebookIcon style={{color: '#4267B2', margin: '0 0.2em', fontSize: '6em'}} /></a>&nbsp;
-          {/* <a href="https://www.Instgram.com"><InstagramIcon style={{color: 'crimson ', margin: '0 0.2em', fontSize: '6em'}}/></a>&nbsp;  */}
-          <a href="https://twitter.com/EnsanPublishers" rel="noreferrer"  target="_blank"> <TwitterIcon style={{color: '#00acee ', margin: '0 0.2em', fontSize: '6em'}}/></a>&nbsp;
-          <a href="https://www.linkedin.com/company/ensan-publishers/" rel="noreferrer"  target="_blank"><LinkedInIcon style={{color: '#0e76a8 ', margin: ' 0 0.2em', fontSize: '6em'}}/></a>&nbsp;
-      </div>
       </div>
     </div>
    );    

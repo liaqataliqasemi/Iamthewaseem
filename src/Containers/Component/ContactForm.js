@@ -7,6 +7,7 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { useForm } from "react-hook-form";
 import './Style.css';
 
 
@@ -39,9 +40,13 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignUp() {
   const classes = useStyles();
+  const { register, handleSubmit, errors, reset } = useForm();
+  const onSubmit = (data, event) => {
 
+    event.preventDefault();
+  }
   return (
-    <Container component="main" maxWidth="xs">
+    <Container id={'form'} component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
         <Typography component="h2" variant="h5">
@@ -49,7 +54,7 @@ export default function SignUp() {
             <div>فورم تماس</div>
         </div>
         </Typography>
-        <form className={classes.form} noValidate>
+        <form onSubmit={handleSubmit(onSubmit)} className={classes.form} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -59,9 +64,15 @@ export default function SignUp() {
                     input: classes.input
                     }
                 }}
-                autoComplete="fname"
                 name="firstName"
                 variant="outlined"
+                inputRef={register({
+                  required: <Typography variant='button' className='nassim' >
+                  لطفاً نام تان را درج کنید.
+                  </Typography>,
+                })}
+                error={Boolean(errors.firstName)}
+                helperText={errors.firstName?.message}
                 required
                 fullWidth
                 id="firstName"
@@ -69,7 +80,6 @@ export default function SignUp() {
                     <Typography variant='button' className='nassim' >
                                   نام
                     </Typography>}
-                autoFocus
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -82,6 +92,13 @@ export default function SignUp() {
                 }}
                 variant="outlined"
                 required
+                inputRef={register({
+                  required: <Typography variant='button' className='nassim' >
+                  لطفاً تخلص تان را درج کنید.
+                  </Typography>,
+                })}
+                error={Boolean(errors.lastName)}
+                helperText={errors.lastName?.message}
                 fullWidth
                 id="lastName"
                 label={
@@ -89,7 +106,6 @@ export default function SignUp() {
                                   تخلص
                     </Typography>}
                 name="lastName"
-                autoComplete="lname"
               />
             </Grid>
             <Grid item xs={12}>
@@ -103,6 +119,13 @@ export default function SignUp() {
                 variant="outlined"
                 required
                 fullWidth
+                inputRef={register({
+                  required: <Typography variant='button' className='nassim' >
+                  لطفاً  ایمیل آدرس تان را درج کنید.
+                  </Typography>,
+                })}
+                error={Boolean(errors.email)}
+                helperText={errors.email?.message}
                 id="email"
                 label={
                     <Typography variant='button' className='nassim' >
@@ -123,11 +146,18 @@ export default function SignUp() {
                 variant="outlined"
                 required
                 fullWidth
-                name="phone"
+                name="phonenumber"
                 label={<Typography variant='button' className='nassim'>
                  شماره تماس 
                 </Typography>}
                 type="tel"
+                inputRef={register({
+                  required: <Typography variant='button' className='nassim' >
+                  لطفاً شماره تماس تان را درج کنید.
+                  </Typography>,
+                })}
+                error={Boolean(errors.phonenumber)}
+                helperText={errors.phonenumber?.message}
                 id="phonenumber"
                 autoComplete="phone-number"
               />
@@ -146,6 +176,13 @@ export default function SignUp() {
                 required
                 fullWidth
                 name="message"
+                inputRef={register({
+                  required: <Typography variant='button' className='nassim' >
+                  لطفاً پیام تان را درج کنید.
+                  </Typography>,
+                })}
+                error={Boolean(errors.message)}
+                helperText={errors.message?.message}
                 label={<Typography variant='button' className='nassim'>
                  پیام 
                 </Typography>}
