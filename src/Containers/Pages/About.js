@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
   h1:{
     fontFamily: 'titr',
-    padding: '1em 0 0 0',
+    padding: '0.5em 0 1em 0',
     textAlign: 'center',
     fontSize: '3em',
     color: '#fff'

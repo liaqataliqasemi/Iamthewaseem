@@ -3,20 +3,27 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Alert from '../Component/Alert';
 import BookCard from '../Component/BookCard';
-import SingleBookCard from '../Component/SingleBookCard';
-import Aks1 from '../Assets/BedilVol1.jpg';
+import BookGallery3 from '../Component/BookCardGallery3';
+import BookGallery2 from '../Component/BookCardGallery2';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: '0.2em 1em',
-    background: '#F9F7F7'
+    background: '#fff'
   },
   paper: {
     padding: theme.spacing(12),
     textAlign: 'justify',
   },
   h1:{
+    fontFamily: 'titr',
+    padding: '0.2em 2em',
+    textAlign: 'center',
+    fontSize: '2.6em',
+    color: '#112D4E'
+  },
+  h2:{
     fontFamily: 'titr',
     padding: '0.2em 2em',
     textAlign: 'center',
@@ -51,7 +58,11 @@ export default function CenteredGrid() {
                 علاقه‌مندان به‌هدف دریافت هریکی از مجلدات اثر  انسان شناختی بیدل به صفحه‌ی خرید کتاب مراجعه بفرمایند.
                 </p>
                 <BookCard/>
-                <SingleBookCard aks={Aks1} title="Bidel Volume no. 1" />
+                <p className={classes.h1}>
+                سایر کتاب های محترم استاد دکتر سید نورالحق کاوش
+                </p>
+                <BookGallery3/>
+                <BookGallery2/>
             </Grid>
         </Grid>
       </div>

@@ -4,10 +4,6 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ContactCard from '../Component/ContactCard';
 // eslint-disable-next-line
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
 
 const useStyles = makeStyles((theme) => ({
   root: {

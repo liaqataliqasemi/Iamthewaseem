@@ -1,6 +1,6 @@
 .header{
     content:'';
-    min-height: 10vh;
+    min-height: 0.5vh;
     background-color: #005691!important;
     display: 'flex';
     justify-content: space-between;
@@ -12,24 +12,24 @@
     display: 'flex';
     justify-content: space-between;
 }
-.custom-shape-divider-top-1651038926 {
+.custom-shape-divider-top-1651238631 {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1651038926 svg {
+.custom-shape-divider-top-1651238631 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 130px;
+    height: 96px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1651038926 .shape-fill {
+.custom-shape-divider-top-1651238631 .shape-fill {
     fill: #005691;
 }
-
-

@@ -475,9 +475,7 @@ const LandingPage = () => {
                     <p className={classes.para}>
                         18 اپریل 2022 مطابق 29 حمل 1401
                     </p>
-
                     </div>
-
                 </Grid>
             </Box>
         </div>      
