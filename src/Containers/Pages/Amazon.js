@@ -12,8 +12,8 @@ import Buy from '../Component/BuyButton';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: '0.2em 2vw',
-    backgroundColor: 'white!important'
+    backgroundColor: 'white!important',
+    overflow: 'hidden'
   },
   h1:{
     fontFamily: 'titr',
@@ -44,14 +44,14 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center'
   },
   paper:{
-      justifyContent: 'space-around'
+      justifyContent: 'space-around',
   }
 }));
 
 export default function CenteredGrid() {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
     {/* <div className='header'>
         
     </div> */}
@@ -64,7 +64,7 @@ export default function CenteredGrid() {
             <p className={classes.h1}> خریداری کتاب از آمازون</p>
             <p className={classes.paratop}>مجلدات انسان‌شناختی بیدل بخش پنجم اخلاق (بینش-روش خودسازی) بیدل پارۀ یکم اینجا قابل دریافت است.</p>
         </div>
-        <Grid className={classes.root} container spacing={1}>
+        <Grid  container spacing={1}>
             <Grid item xs={12} sm={12} md={8} lg={8}>
                 <Box className={classes.paper}>
                     <p className={classes.para}>
@@ -92,7 +92,12 @@ export default function CenteredGrid() {
                 </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
-                <Box className={classes.paper}>
+                    <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        paddingBottom= "25px"
+                    >
                     <FlipImage aks={Vol4} text="انسان‌شناختی بیدل بخش پنجم"/>
                 </Box>
             </Grid>
