@@ -12,7 +12,7 @@ import Divider from '@material-ui/core/Divider';
 import MenuIcon from "@material-ui/icons/MenuOpenRounded";
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import './Header.css';
-import logos from './logo2.png';
+import logos from './logo21.png';
 import logos1 from './logo3.png';
 import Button from '@mui/material/Button';
 
@@ -104,17 +104,17 @@ const { mobileView, drawerOpen } = state;
     return (
     <Toolbar style={{background: '#005691'}}>
     <div>
-      <a href="/"><img src={logos1} alt="logo" height='50vh' width = 'auto' style={{flex: 1}}/>&nbsp;</a>     
+      <a href="/"><img src={logos1} alt="logo" height='50px' width = 'auto' style={{flex: 1}}/>&nbsp;</a>     
     </div>
 {/* menu tabs */}
     <div className='titr' style={{paddingRight: '3vw'}}>
         <div className="dropdown">
             <Button style={{fontSize: '19px', marginRight: '15px'}} href="/Books" className="dropbtn">کتاب ها</Button>
                 <div className="dropdown-content">
-                        <a className='vazir' href="/Ensan_shinakhti_part_one">انسان‌شناختی بیدل مجلد اول</a>   
-                        <a className='vazir' href="/Ensan_shinakhti_part_two">انسان‌شناختی بیدل مجلد دوم</a>
-                        <a className='vazir' href="/Ensan_shinakhti_part_three">انسان‌شناختی بیدل مجلد سوم</a>
-                        <a className='vazir' href="/Ensan_shinakhti_part_four">انسان‌شناختی بیدل مجلد چهارم</a> 
+                        <a className='vazir' href="/Ensan_shinakhti_vol_one">انسان‌شناختی بیدل مجلد اول</a>   
+                        <a className='vazir' href="/Ensan_shinakhti_vol_two">انسان‌شناختی بیدل مجلد دوم</a>
+                        <a className='vazir' href="/Ensan_shinakhti_vol_three">انسان‌شناختی بیدل مجلد سوم</a>
+                        <a className='vazir' href="/Ensan_shinakhti_vol_four">انسان‌شناختی بیدل مجلد چهارم</a> 
                 </div>
         </div>
         <div className="dropdown">
@@ -151,7 +151,7 @@ const { mobileView, drawerOpen } = state;
     
       return (
         <div>
-        <Toolbar style={{background: '#001E6C'}}>
+        <Toolbar style={{background: '#005691'}}>
           <IconButton
             {...{
               edge: "start",
@@ -191,20 +191,20 @@ const { mobileView, drawerOpen } = state;
               </IconButton>
               </div>
               <Divider variant="middle" />
-              <Typography style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کتاب ها</Typography>
+              <Button href="/Books" style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto', fontSize: '1.2em'}}>کتاب ها</Button>
                 <div className={drawerContainer}>
-                  <a className={menuItem} href="/Ensan_shinakhti_part_one">انسان‌شناختی بیدل مجلد اول<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
-                  <a className={menuItem} href="/Ensan_shinakhti_part_two">انسان‌شناختی بیدل مجلد دوم<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
-                  <a className={menuItem} href="/Ensan_shinakhti_part_three">انسان‌شناختی بیدل مجلد سوم<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
-                  <a className={menuItem} href="/Ensan_shinakhti_part_four">	انسان‌شناختی بیدل مجلد چهارم<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
+                  <a className={menuItem} href="/Ensan_shinakhti_vol_one">انسان‌شناختی بیدل مجلد اول<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
+                  <a className={menuItem} href="/Ensan_shinakhti_vol_two">انسان‌شناختی بیدل مجلد دوم<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
+                  <a className={menuItem} href="/Ensan_shinakhti_vol_three">انسان‌شناختی بیدل مجلد سوم<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
+                  <a className={menuItem} href="/Ensan_shinakhti_vol_four">	انسان‌شناختی بیدل مجلد چهارم<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                 </div> 
               <Divider variant="middle" />  
-              <Typography style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>نویسنده</Typography>
+              <Button href="/Author" style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto', fontSize: '1.2em'}}>نویسنده</Button>
                 <div className={drawerContainer}>
                   <a className={menuItem} href="/Author">دکتر سید نورالحق کاوش<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                 </div>
               <Divider variant="middle" />  
-              <Typography style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>خرید کتاب</Typography>
+              <Button href="/Buy" style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto', fontSize: '1.2em'}}>خرید کتاب</Button>
                 <div className={drawerContainer}>
                   <a className={menuItem} href="/Amazon">خرید کتاب از آمازون<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                   <a className={menuItem} href="/PayPal">	خرید کتاب با پی‌پال<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>

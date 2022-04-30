@@ -26,10 +26,10 @@ class Routes extends Component {
                             <Route path="/" render={props => <LandingPage {...props} />} exact component={LandingPage}/>
                             <Route path="/AboutUs" exact component={About}/>
                             <Route path="/Author" exact component={Author}/>
-                            <Route path="/Ensan_shinakhti_part_one" exact component={Ensan1}/>
-                            <Route path="/Ensan_shinakhti_part_two" exact component={Ensan2}/>
-                            <Route path="/Ensan_shinakhti_part_three" exact component={Ensan3}/>
-                            <Route path="/Ensan_shinakhti_part_four" exact component={Ensan4}/>
+                            <Route path="/Ensan_shinakhti_vol_one" exact component={Ensan1}/>
+                            <Route path="/Ensan_shinakhti_vol_two" exact component={Ensan2}/>
+                            <Route path="/Ensan_shinakhti_vol_three" exact component={Ensan3}/>
+                            <Route path="/Ensan_shinakhti_vol_four" exact component={Ensan4}/>
                             <Route path="/Amazon" exact component={Amazon}/>
                             <Route path="/PayPal" exact component={Paypal}/>
                             <Route path="/Books" exact component={Books}/>

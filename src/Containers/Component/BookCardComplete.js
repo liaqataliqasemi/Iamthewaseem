@@ -10,7 +10,10 @@ import BedilVol2 from '../Assets/BedilVol2.jpg';
 import BedilVol3 from '../Assets/BedilVol3.jpg';
 import BedilVol1 from '../Assets/BedilVol1.jpg';
 import BedilVol4 from '../Assets/BedilVol4.jpg';
-
+import BedilVol22 from '../Assets/BedilVol22.jpg';
+import BedilVol32 from '../Assets/BedilVol32.jpg';
+import BedilVol12 from '../Assets/BedilVol12.jpg';
+import BedilVol41 from '../Assets/BedilVol41.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -105,7 +108,25 @@ export default function AutoGrid() {
                   </CardActionArea>
               </Card>
           </Grid>
-
+          <Grid item xs={12} sm={4} md={2}>
+              <Card elevation={5} className={classes.resha}>
+                  <CardActionArea>
+                      <a href="/Ensan_shinakhti_vol_one" className={classes.cityname}>
+                      <CardMedia
+                      component="img"
+                      alt="Bidel"
+                      image= {BedilVol12}
+                      title="BedilVol12"
+                      />
+                      <CardContent>
+                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
+                      Bidel's Anthropologie Vol. 1
+                      </Typography>
+                      </CardContent>
+                      </a>
+                  </CardActionArea>
+              </Card>
+          </Grid>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
@@ -125,8 +146,29 @@ export default function AutoGrid() {
                   </CardActionArea>
               </Card>
           </Grid>
-
-
+          <Grid item xs={12} sm={4} md={2}>
+              <Card elevation={5} className={classes.resha}>
+                  <CardActionArea>
+                      <a href="/Ensan_shinakhti_vol_two" className={classes.cityname}>
+                      <CardMedia
+                      component="img"
+                      alt="Bidel"
+                      image= {BedilVol22}
+                      title="BedilVol22"
+                      />
+                      <CardContent>
+                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
+                      Bidel's Anthropologie Vol. 2
+                      </Typography>
+                      </CardContent>
+                      </a> 
+                  </CardActionArea>
+              </Card>
+          </Grid>
+        </Grid>
+      </div>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
@@ -146,7 +188,25 @@ export default function AutoGrid() {
                   </CardActionArea>
               </Card>
           </Grid>
-
+          <Grid item xs={12} sm={4} md={2}>
+              <Card elevation={5} className={classes.resha}>
+                  <CardActionArea>
+                      <a href="/Ensan_shinakhti_vol_three" className={classes.cityname}>
+                      <CardMedia
+                      component="img"
+                      alt="Bidel"
+                      image= {BedilVol32}
+                      title="BedilVol2"
+                      />
+                      <CardContent>
+                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
+                      Bidel's Anthropologie Vol. 3
+                      </Typography>
+                      </CardContent>
+                      </a>
+                  </CardActionArea>
+              </Card>
+          </Grid>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
@@ -160,6 +220,25 @@ export default function AutoGrid() {
                       <CardContent>
                       <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
                        مجلد چهارم
+                      </Typography>
+                      </CardContent>
+                      </a> 
+                  </CardActionArea>
+              </Card>
+          </Grid>
+          <Grid item xs={12} sm={4} md={2}>
+              <Card elevation={5} className={classes.resha}>
+                  <CardActionArea>
+                      <a href="/Ensan_shinakhti_vol_four" className={classes.cityname}>
+                      <CardMedia
+                      component="img"
+                      alt="Bidel"
+                      image= {BedilVol41}
+                      title="BedilVol41"
+                      />
+                      <CardContent>
+                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
+                      Bidel's Anthropologie Vol. 4
                       </Typography>
                       </CardContent>
                       </a> 

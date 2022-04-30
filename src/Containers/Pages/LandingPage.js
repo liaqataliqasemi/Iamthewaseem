@@ -11,7 +11,7 @@ import kawish from '../Assets/ostad1.jpg';
 import kawish1 from '../Assets/Elyas1.jpg';
 import BookGallery3 from '../Component/BookCardGallery3';
 import BookGallery2 from '../Component/BookCardGallery2';
-import BookGallery1 from '../Component/BookCardGallery';
+import BookGallery1 from '../Component/BookCardComplete';
 // import Ayeen from '../Assets/AyeenZahidFront.jpeg';
 // import bidel1 from '../Assets/Bidel1.jpg'
 // import bidel2 from '../Assets/Bidel2.jpg'
@@ -137,7 +137,7 @@ const LandingPage = () => {
                     <Grid container spacing={1}>
                         <Grid item xs={12} sm={12} md={8} lg={8}>
                             <Box className='center'>
-                                <p className='para2'>
+                                <p className='para2'> 
                                     با چاپ و نشر مجلد چهارم انسان‌شناختی بیدل (بخش پنجم پارۀ یکم) ازجمله حاوی
                                     معاییر روی‌کردهای اخلاقی بیدل یا اصول فلسفۀ اخلاق او، از سوی ”انتشارات
                                     انسان“، انتظار طولانی شما به‌پایان آمد.
@@ -165,7 +165,7 @@ const LandingPage = () => {
                     <p  className='title2'>
                      مجلد های موجود انسان‌شناختی
                     </p>
-                    <BookCard/>
+                    <BookGallery1/>
                 </div>
                 <div>
                     <div class="custom-shape-divider-top-1651252755">
@@ -259,7 +259,7 @@ const LandingPage = () => {
                     {/* <GetCovers/> */}
                     <BookGallery3/>
                     <BookGallery2/>
-                    <BookGallery1/>
+                    {/* <BookGallery1/> */}
                 </div>
             </div>                 
     )

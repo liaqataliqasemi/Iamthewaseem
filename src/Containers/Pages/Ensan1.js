@@ -66,7 +66,7 @@ export default function CenteredGrid() {
                 alignItems="center"
                 padding="2vh 0"
               >
-                <FlipImage aks={oneside} text={"انسان شناختی بیدل"}/>                
+                <FlipImage aks={oneside} text={" انسان شناختی بیدل مجلد اول"}/>                
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
@@ -87,7 +87,7 @@ export default function CenteredGrid() {
                 alignItems="center"
                 padding="2vh 0"
               >
-                <FlipImage aks={twoside} text={"Bidel's Anthropologie"}/>              
+                <FlipImage aks={twoside} text={"Bidel's Anthropologie Vol. 1"}/>              
               </Box>
             </Grid>
           </Grid>

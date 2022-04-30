@@ -9,7 +9,7 @@ export default function IconLabelButtons(props) {
     <Stack direction="row" spacing={2}>
       <Button href={props.link} style={{backgroundColor: '#EEEEEE', color: '#fff!important'}} variant={props.type} startIcon={<ShoppingCartOutlinedIcon style={{ fontSize: '2em'}} />}>
       &nbsp;
-        <Typography variant='button' size="large" style={{fontFamily: 'nassim', fontSize: '2em', color: '#fff!important'}} >
+        <Typography variant='button' size="large" style={{fontFamily: 'nassim', fontSize: '1.6em', color: '#fff!important'}} >
             {props.text}
         </Typography>
       </Button>

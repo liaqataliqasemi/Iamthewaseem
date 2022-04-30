@@ -36,7 +36,8 @@ const useStyles = makeStyles((theme) => ({
   },
   paper:{
       display: 'flex',
-      justifyContent: 'space-around'
+      justifyContent: 'space-evenly',
+      flexDirection: 'row'
   }
 }));
 

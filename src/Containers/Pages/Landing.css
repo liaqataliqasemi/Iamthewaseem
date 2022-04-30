@@ -22,28 +22,28 @@
     padding-bottom: 1rem;
 }
 .title2{
-    font-size: 3em;
+    font-size: 2.6em;
     font-family: Titr;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
 .title3{
-    font-size: 3em;
+    font-size: 2.6em;
     font-family: Titr;
     color: #283747;
     padding: 1rem 0;
     text-align: center;
 }
 .title4{
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: Titr;
     color: #283747;
     padding: 1rem 0;
     text-align: center;
 }
 .title5{
-    font-size: 3em;
+    font-size: 2.6em;
     font-family: Titr;
     color: #fff;
     padding: 1rem 0;
@@ -61,7 +61,7 @@
     text-shadow: 2px 2px #ffffff;
 }
 .para2{
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 3rem;
     font-family: nassim;
     text-align: justify;
@@ -69,7 +69,7 @@
     color: #112D4E;
 }
 .para3{
-    font-size: 1.7em;
+    font-size: 1.6em;
     line-height: 2.5rem;
     font-family: nassim;
     text-align: justify;

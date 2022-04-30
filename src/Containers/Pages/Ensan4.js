@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Box } from '@material-ui/core';
 import oneside from '../Assets/BedilVol4.jpg';
+import BedilVol41 from '../Assets/BedilVol41.jpg';
 import Kawishwriting from '../Assets/Kawishwriting.jpg';
 import purchase from '../Assets/ebook.svg';
 
@@ -55,11 +56,29 @@ export default function CenteredGrid() {
     <div className={classes.root}>
       <h1 className={classes.h1}>انسان‌شناختی بیدل بخش پنجم اخلاق (بینش-روش خودسازی) بیدل پارۀ یکم</h1>
       <div >
-      {/* <Alert/> */}
-      <div>
-          <div style={{display: 'flex', justifyContent: 'center'}}>
-            <img src={oneside} alt="kawish" height="auto" width="390vw" style={{borderRadius: '25px'}} />
-          </div>
+        <div>
+          <Grid className={classes.gridSpace} container spacing={2}>
+            <Grid item xs={12} sm={12} md={4} lg={4}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                padding="2vh 0"
+              >
+                <img src={oneside} alt="kawish" height="auto" width="390vw" style={{borderRadius: '25px'}} />
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={12} md={4} lg={4}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                padding="2vh 0"
+              >
+                <img src={BedilVol41} alt="kawish" height="auto" width="390vw" style={{borderRadius: '25px'}} />
+              </Box>
+            </Grid>
+          </Grid>
           <p className={classes.para}>
             <b>
             سخن ناشر
@@ -137,19 +156,19 @@ export default function CenteredGrid() {
       </div>
         <a target="_blank" rel="noreferrer"  href='https://www.amazon.com/dp/0578357828?ref=myi_title_dp'>
           <Grid className={classes.gridSpace} container spacing={2}>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-                <p className={classes.para2}>
-                خریداری کتاب از آمازون
-                </p>
-              <Box
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                padding="2vh 0"
-              >
-                <img alt="purchase" src={purchase} height="500vh" width="100%"/>
-              </Box>
-            </Grid>       
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <p className={classes.para2}>
+                  خریداری کتاب از آمازون
+                  </p>
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  padding="2vh 0"
+                >
+                  <img alt="purchase" src={purchase} height="500vh" width="100%"/>
+                </Box>
+              </Grid>       
           </Grid>
         </a>
       </div>

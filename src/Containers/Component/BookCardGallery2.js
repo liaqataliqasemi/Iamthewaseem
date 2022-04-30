@@ -7,6 +7,10 @@ import Majmo from '../Assets/Majmo.jpg'
 import Manteq from '../Assets/Manteq.jpeg'
 import Nazaria from '../Assets/Nazaria.jpg'
 import Rohe from '../Assets/Rohe.jpeg';
+import Majmo2 from '../Assets/Majmo2.jpg'
+import Manteq2 from '../Assets/Manteq2.jpeg'
+import Rohe2 from '../Assets/Rohe2.jpeg';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -68,77 +72,97 @@ const useStyles = makeStyles((theme) => ({
   },
   resha: {
     maxWidth: 345,
+    marginBottom: '5vh'
   },
   cityname: {
       fontFamily: 'nassim',
       textAlign: 'center!important'
   }
 }));
-//
+
 export default function AutoGrid() {
   const classes = useStyles();
   return (
     <div style={{ padding: '1em', paddingBottom: '4em'}}>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-        <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
-        <Grid item xs={12} sm={4} md={2}>
-            <Card className={classes.resha}>
-                
-                    <CardMedia
-                    component="img"
-                    alt="Aks Ketab"
-                    height= "400vh"
-                    width= "auto"
-                    image= {Majmo}
-                    title="Majmo"
-                    />
-                
-            </Card>
-        </Grid>
-        <Grid item xs={12} sm={4} md={2}>
-            <Card className={classes.resha}>
+          <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card elevation={5} className={classes.resha}>
+                        <CardMedia
+                        component="img"
+                        alt="Aks Ketab"
+                        image= {Majmo}
+                        title="Majmo"
+                        />
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card elevation={5} className={classes.resha}>
+                        <CardMedia
+                        component="img"
+                        alt="Aks Ketab"
+                        image= {Majmo2}
+                        title="Majmo2"
+                        />
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card elevation={5} className={classes.resha}>
+                        <CardMedia
+                        component="img"
+                        alt="Aks Ketab"
+                        image= {Manteq}
+                        title="Manteq"
+                        />
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card elevation={5} className={classes.resha}>
+                        <CardMedia
+                        component="img"
+                        alt="Aks Ketab"
+                        image= {Manteq2}
+                        title="Manteq2"
+                        />
+                </Card>
+            </Grid>
+          </Grid>
+        </div>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+          <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
 
-                    <CardMedia
-                    component="img"
-                    alt="Aks Ketab"
-                    height= "400vh"
-                    width= "auto"
-                    image= {Manteq}
-                    title="Manteq"
-                    />
-
-            </Card>
-        </Grid>
-        <Grid item xs={12} sm={4} md={2}>
-            <Card className={classes.resha}>
-                
-                    <CardMedia
-                    component="img"
-                    alt="Aks Ketab"
-                    height= "400vh"
-                    width= "auto"
-                    image= {Nazaria}
-                    title="Nazaria"
-                    />
-                
-            </Card>
-        </Grid>
-        <Grid item xs={12} sm={4} md={2}>
-            <Card className={classes.resha}>
-                
-                    <CardMedia
-                    component="img"
-                    alt="Aks Ketab"
-                    height= "400vh"
-                    width= "auto"
-                    image= {Rohe}
-                    title="Rohe"
-                    />
-                
-            </Card>
-        </Grid>
-      </Grid>
-      </div>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card elevation={5} className={classes.resha}>
+                        <CardMedia
+                        component="img"
+                        alt="Aks Ketab"
+                        image= {Nazaria}
+                        title="Nazaria"
+                        />
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card elevation={5} className={classes.resha}>
+                        <CardMedia
+                        component="img"
+                        alt="Aks Ketab"
+                        image= {Rohe}
+                        title="Rohe"
+                        />
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card elevation={5} className={classes.resha}>
+                        <CardMedia
+                        component="img"
+                        alt="Aks Ketab"
+                        image= {Rohe2}
+                        title="Rohe2"
+                        />
+                </Card>
+            </Grid>
+          </Grid>
+        </div>
     </div>
   );
 }

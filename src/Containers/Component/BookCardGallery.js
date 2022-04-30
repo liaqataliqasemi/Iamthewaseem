@@ -68,6 +68,7 @@ const useStyles = makeStyles((theme) => ({
   },
   resha: {
     maxWidth: 345,
+    marginBottom: '5vh'
   },
   cityname: {
       fontFamily: 'nassim',
@@ -80,72 +81,108 @@ export default function AutoGrid() {
   return (
     <div style={{ padding: '1em', paddingBottom: '4em'}}>
         <div style={{display: 'flex', justifyContent: 'center'}}>
-        <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
-        <Grid item xs={12} sm={4} md={2}>
-            <Card className={classes.resha}>
-                
-                <a href="/Ensan_shinakhti_part_one" className={classes.cityname}>
-                    <CardMedia
-                    component="img"
-                    alt="BedilVol1"
-                    height= "400vh"
-                    width= "auto"
-                    image= {BedilVol1}
-                    title="BedilVol1"
-                    />
-                    </a>
-
-            </Card>
+          <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card className={classes.resha}>
+                    <a href="/Ensan_shinakhti_part_one" className={classes.cityname}>
+                        <CardMedia
+                        component="img"
+                        alt="BedilVol1"
+                        image= {BedilVol1}
+                        title="BedilVol1"
+                        />
+                        </a>
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card className={classes.resha}>
+                        <a href="/Ensan_shinakhti_part_two" className={classes.cityname}>
+                        <CardMedia
+                        component="img"
+                        alt="BedilVol2"
+                        image= {BedilVol2}
+                        title="BedilVol2"
+                        />
+                        </a>
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card className={classes.resha}>
+                        <a href="/Ensan_shinakhti_part_three" className={classes.cityname}>
+                        <CardMedia
+                        component="img"
+                        alt="BedilVol3"
+                        image= {BedilVol3}
+                        title="BedilVol3"
+                        />
+                        </a> 
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card className={classes.resha}>
+                        <a href="/Ensan_shinakhti_part_four" className={classes.cityname}>
+                        <CardMedia
+                        component="img"
+                        alt="BedilVol4"
+                        image= {BedilVol4}
+                        title="BedilVol4"
+                        />
+                        </a> 
+                </Card>
+            </Grid>
         </Grid>
-        <Grid item xs={12} sm={4} md={2}>
-            <Card className={classes.resha}>
-                
-                    <a href="/Ensan_shinakhti_part_two" className={classes.cityname}>
-                    <CardMedia
-                    component="img"
-                    alt="BedilVol2"
-                    height= "400vh"
-                    width= "auto"
-                    image= {BedilVol2}
-                    title="BedilVol2"
-                    />
-                    </a>
-
-            </Card>
+      </div>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+          <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card className={classes.resha}>
+                    <a href="/Ensan_shinakhti_part_one" className={classes.cityname}>
+                        <CardMedia
+                        component="img"
+                        alt="BedilVol1"
+                        image= {BedilVol1}
+                        title="BedilVol1"
+                        />
+                        </a>
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card className={classes.resha}>
+                        <a href="/Ensan_shinakhti_part_two" className={classes.cityname}>
+                        <CardMedia
+                        component="img"
+                        alt="BedilVol2"
+                        image= {BedilVol2}
+                        title="BedilVol2"
+                        />
+                        </a>
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card className={classes.resha}>
+                        <a href="/Ensan_shinakhti_part_three" className={classes.cityname}>
+                        <CardMedia
+                        component="img"
+                        alt="BedilVol3"
+                        image= {BedilVol3}
+                        title="BedilVol3"
+                        />
+                        </a> 
+                </Card>
+            </Grid>
+            <Grid item xs={12} sm={4} md={2}>
+                <Card className={classes.resha}>
+                        <a href="/Ensan_shinakhti_part_four" className={classes.cityname}>
+                        <CardMedia
+                        component="img"
+                        alt="BedilVol4"
+                        image= {BedilVol4}
+                        title="BedilVol4"
+                        />
+                        </a> 
+                </Card>
+            </Grid>
         </Grid>
-        <Grid item xs={12} sm={4} md={2}>
-            <Card className={classes.resha}>
-                
-                    <a href="/Ensan_shinakhti_part_three" className={classes.cityname}>
-                    <CardMedia
-                    component="img"
-                    alt="BedilVol3"
-                    height= "400vh"
-                    width= "auto"
-                    image= {BedilVol3}
-                    title="BedilVol3"
-                    />
-                    </a> 
-
-            </Card>
-        </Grid>
-        <Grid item xs={12} sm={4} md={2}>
-            <Card className={classes.resha}>
-                
-                    <a href="/Ensan_shinakhti_part_four" className={classes.cityname}>
-                    <CardMedia
-                    component="img"
-                    alt="BedilVol4"
-                    height= "400vh"
-                    width= "auto"
-                    image= {BedilVol4}
-                    title="BedilVol4"
-                    />
-                    </a> 
-
-            </Card>
-        </Grid>
-      </Grid>
       </div>
     </div>
   );

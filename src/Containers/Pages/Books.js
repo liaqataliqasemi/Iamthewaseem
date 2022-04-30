@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Alert from '../Component/Alert';
-import BookCard from '../Component/BookCard';
+import BookCard from '../Component/BookCardComplete';
 import BookGallery3 from '../Component/BookCardGallery3';
 import BookGallery2 from '../Component/BookCardGallery2';
 
@@ -59,7 +59,7 @@ export default function CenteredGrid() {
                 </p>
                 <BookCard/>
                 <p className={classes.h1}>
-                سایر کتاب های محترم استاد دکتر سید نورالحق کاوش
+                دیگر آثار محترم استاد دکتر سید نور الحق کاوش
                 </p>
                 <BookGallery3/>
                 <BookGallery2/>
