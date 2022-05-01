@@ -14,7 +14,7 @@ const str = new Date().toLocaleDateString('fa-IR');
 function Copyright() {
     return (
       <Typography variant="inherit" style={{color: '#023b59', fontFamily: 'nassim', fontSize: '18px'}}>
-         کلیه حقوق این وب‌سایت متعلق به انتشارات انسان می باشد.
+         کلیۀ حقوق این وب‌سایت متعلق به‌انتشارات انسان است.
         {' ©  '}
         {' '}
         {'2022/1401'} {' '}  

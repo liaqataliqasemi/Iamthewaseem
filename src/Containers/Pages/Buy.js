@@ -62,8 +62,8 @@ export default function CenteredGrid() {
           <Grid className={classes.gridSpace} container spacing={1}>
                 <Grid item xs={12} sm={12} md={12} lg={12}>
                     <Box className={classes.paper}>
-                        <FlipImage aks={Amazon} text="خریداری از طریق آمازون" link="/Amazon"/>
-                        <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال" link="/Paypal"/>
+                        <FlipImage aks={Amazon} text="خریداری از طریق آمازون/Amazon" link="/Amazon"/>
+                        <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال/PayPal" link="/Paypal"/>
                     </Box>
                 </Grid>
           </Grid>

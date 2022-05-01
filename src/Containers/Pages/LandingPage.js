@@ -164,7 +164,7 @@ const LandingPage = () => {
                 </div>
                 <div className='filler'>
                     <p  className='title2'>
-                     مجلد های موجود انسان‌شناختی
+                     مجلد‌های موجود انسان‌شناختی
                     </p>
                     {/* <BookGallery1/> */}
                     <BookCard/>
@@ -175,9 +175,6 @@ const LandingPage = () => {
                             <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
                         </svg>
                     </div>
-                    <p  className='title3'>
-                         ما را بشناسید...
-                    </p>
                 </div>
                 <div>
                     <Grid container spacing={1}>
@@ -256,7 +253,7 @@ const LandingPage = () => {
                 </div>
                 <div className='filler3'>
                     <p  className='title5'>
-                            گالری کتاب
+                            گالری کتاب‌ها
                     </p>
                     {/* <GetCovers/> */}
                     <BookGallery3/>

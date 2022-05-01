@@ -49,7 +49,7 @@ export default function CenteredGrid() {
   const classes = useStyles();
   return (
     <div>
-      <h1 className={classes.h1}>گالری کتاب ها</h1>
+      <h1 className={classes.h1}>گالری کتاب‌ها</h1>
       <div className={classes.root}>
       <Alert/>
         <Grid className={classes.gridSpace} container spacing={2}>
@@ -59,7 +59,7 @@ export default function CenteredGrid() {
                 </p>
                 <BookCard/>
                 <p className={classes.h1}>
-                دیگر آثار محترم استاد دکتر سید نور الحق کاوش
+                از دیگر آثار چاپ‌شدۀ استاد دکتر سید نورالحق کاوش
                 </p>
                 <BookGallery3/>
                 <BookGallery2/>

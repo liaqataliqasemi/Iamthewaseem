@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import {Typography } from '@material-ui/core';
+import Button from '@mui/material/Button';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -73,12 +74,19 @@ const useStyles = makeStyles((theme) => ({
   resha: {
     maxWidth: 450,
     marginBottom: '5vh',
+    backgroundColor: '#445e79'
   },
   cityname: {
       fontFamily: 'nassim',
       textAlign: 'center!important',
       fontSize: '1.4vw'
-  }
+  },
+  button: {
+    fontFamily: 'titr',
+    textAlign: 'center!important',
+    color: '#445e79!important',
+    fontSize: '1vw'
+}
 }));
 //
 export default function AutoGrid() {
@@ -88,82 +96,83 @@ export default function AutoGrid() {
         <div style={{display: 'flex', justifyContent: 'center'}}>
         <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
           <Grid item xs={12} sm={4} md={2}>
-              <Card elevation={5} className={classes.resha}>
+              <Card elevation={15} className={classes.resha}>
                   <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_one" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol1}
                       title="BedilVol1"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      مجلد اول
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                      <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_one">
+                          <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                          مجلد اول
+                          </Typography> 
+                      </Button>
                       </CardContent>
-                      </a>
                   </CardActionArea>
               </Card>
+
           </Grid>
 
           <Grid item xs={12} sm={4} md={2}>
-              <Card elevation={5} className={classes.resha}>
+              <Card elevation={15} className={classes.resha}>
                   <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_two" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol2}
                       title="BedilVol2"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      مجلد دوم
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_two">
+                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            مجلد دوم
+                            </Typography> 
+                        </Button> 
                       </CardContent>
-                      </a> 
                   </CardActionArea>
               </Card>
           </Grid>
 
 
           <Grid item xs={12} sm={4} md={2}>
-              <Card elevation={5} className={classes.resha}>
+              <Card elevation={15} className={classes.resha}>
                   <CardActionArea>
-                  <a href="/Ensan_shinakhti_vol_three" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol3}
                       title="BedilVol3"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      مجلد سوم
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_three">
+                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            مجلد سوم
+                            </Typography> 
+                        </Button> 
                       </CardContent>
-                      </a>
                   </CardActionArea>
               </Card>
           </Grid>
 
           <Grid item xs={12} sm={4} md={2}>
-              <Card elevation={5} className={classes.resha}>
+              <Card elevation={15} className={classes.resha}>
                   <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_four" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol4}
                       title="BedilVol4"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                       مجلد چهارم
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_four">
+                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            مجلد چهارم
+                            </Typography> 
+                        </Button> 
                       </CardContent>
-                      </a> 
                   </CardActionArea>
               </Card>
           </Grid>

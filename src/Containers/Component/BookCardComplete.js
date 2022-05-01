@@ -14,6 +14,7 @@ import BedilVol22 from '../Assets/BedilVol22.jpg';
 import BedilVol32 from '../Assets/BedilVol32.jpg';
 import BedilVol12 from '../Assets/BedilVol12.jpg';
 import BedilVol41 from '../Assets/BedilVol41.jpg';
+import Button from '@mui/material/Button';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -76,13 +77,26 @@ const useStyles = makeStyles((theme) => ({
   resha: {
     maxWidth: 345,
     marginBottom: '5vh',
-    height: '50vh'
+    backgroundColor: '#005691',
   },
   cityname: {
       fontFamily: 'nassim',
       textAlign: 'center!important',
       fontSize: '1vw'
-  }
+  },
+  button: {
+    fontFamily: 'titr',
+    textAlign: 'center!important',
+    color: '#005691!important',
+    fontSize: '1em'
+  },
+  buttonenglish: {
+    fontFamily: 'vazir',
+    textAlign: 'center!important',
+    color: '#005691!important',
+    fontSize: '1em',
+    fontWeight: 1000
+}
 }));
 //
 export default function AutoGrid() {
@@ -94,76 +108,76 @@ export default function AutoGrid() {
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
-                  <a href="/Ensan_shinakhti_vol_one" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol1}
                       title="BedilVol1"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      مجلد اول
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                      <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_one">
+                          <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                          مجلد اول
+                          </Typography> 
+                      </Button>
                       </CardContent>
-                      </a>
                   </CardActionArea>
               </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_one" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol12}
                       title="BedilVol12"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      Bidel's Anthropologie Vol. 1
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_one">
+                            <Typography  className={classes.buttonenglish} gutterBottom variant="h5" component="h5">
+                            Bidel's Anthropologie Vol. 1
+                            </Typography> 
+                        </Button>
                       </CardContent>
-                      </a>
                   </CardActionArea>
               </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_two" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol2}
                       title="BedilVol2"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      مجلد دوم
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_two">
+                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            مجلد دوم
+                            </Typography> 
+                        </Button>
                       </CardContent>
-                      </a> 
                   </CardActionArea>
               </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_two" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol22}
                       title="BedilVol22"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      Bidel's Anthropologie Vol. 2
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_two">
+                            <Typography  className={classes.buttonenglish} gutterBottom variant="h5" component="h5">
+                            Bidel's Anthropologie Vol. 2
+                            </Typography> 
+                        </Button>
                       </CardContent>
-                      </a> 
                   </CardActionArea>
               </Card>
           </Grid>
@@ -174,76 +188,76 @@ export default function AutoGrid() {
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
-                  <a href="/Ensan_shinakhti_vol_three" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol3}
                       title="BedilVol3"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      مجلد سوم
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_three">
+                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            مجلد سوم
+                            </Typography> 
+                        </Button>
                       </CardContent>
-                      </a>
                   </CardActionArea>
               </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
-                  <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_three" className={classes.cityname}>
+                  <CardActionArea>  
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol32}
                       title="BedilVol2"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      Bidel's Anthropologie Vol. 3
-                      </Typography>
+                        <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_three">
+                            <Typography  className={classes.buttonenglish} gutterBottom variant="h5" component="h5">
+                            Bidel's Anthropologie Vol. 3
+                            </Typography> 
+                        </Button>
                       </CardContent>
-                      </a>
                   </CardActionArea>
               </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_four" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol4}
                       title="BedilVol4"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                       مجلد چهارم
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_four">
+                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            مجلد چهارم
+                            </Typography> 
+                        </Button>
                       </CardContent>
-                      </a> 
                   </CardActionArea>
               </Card>
           </Grid>
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
-                      <a href="/Ensan_shinakhti_vol_four" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"
                       image= {BedilVol41}
                       title="BedilVol41"
                       />
-                      <CardContent>
-                      <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-                      Bidel's Anthropologie Vol. 4
-                      </Typography>
+                      <CardContent style={{display:'flex', justifyContent: 'center'}}>
+                        <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_four">
+                            <Typography  className={classes.buttonenglish} gutterBottom variant="h5" component="h5">
+                            Bidel's Anthropologie Vol. 4
+                            </Typography> 
+                        </Button>
                       </CardContent>
-                      </a> 
                   </CardActionArea>
               </Card>
           </Grid>

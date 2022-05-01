@@ -94,7 +94,7 @@ export default function AutoGrid() {
               />
               <CardContent>
               <Typography  className={classes.cityname} gutterBottom variant="h5" component="h5">
-              استاد کاوش، پوهنتون کابل، افغانستان
+              استاد کاوش، پوهنتون کابل، افغانستان، 1363/1984
               </Typography>
               </CardContent>
             </Card>
@@ -108,7 +108,7 @@ export default function AutoGrid() {
               />
               <CardContent>
               <Typography  className={classes.cityname} gutterBottom variant="h5" component="h5">
-              استاد کاوش، کانون فرهنگی حکیم‌ ناصر خسرو بلخی، پلخمری، افغانستان
+              استاد کاوش، کتاب‌خانۀ کانون فرهنگی حکیم ناصرخسرو بلخی، پلخمری، افغانستان، 1372/1993
               </Typography>
               </CardContent>
             </Card>
@@ -122,7 +122,7 @@ export default function AutoGrid() {
               />
               <CardContent>
               <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-              استاد کاوش، کانون حکیم ناصر خسرو بلخی، پلخمری، افغانستان
+              استاد کاوش، ریاست کانون فرهنگی حکیم ناصرخسرو بلخی، پلخمری، افغانستان، 1372/1993
               </Typography>
               </CardContent>
             </Card>
@@ -136,7 +136,7 @@ export default function AutoGrid() {
               />
               <CardContent>
               <Typography  className={classes.cityname} gutterBottom variant="h5" component="h2">
-              استاد دکتر سید نورالحق کاوش، آکادمی علوم تاجیکستان
+              استاد کاوش، محفل دفاع دکترا، آکادمی علوم تاجیکستان، دوشنبه، تاجیکستان، 1377/1998
               </Typography>
               </CardContent>
             </Card>
