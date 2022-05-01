@@ -3,14 +3,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
-import Ayeen from '../Assets/AyeenZahidFront.jpeg';
+import Ayeen from '../Assets/AyeenZahidFront.jpg';
 import Daramadi from '../Assets/Daramadi.jpg'
-import Didgah from '../Assets/Didgah.jpeg'
-import Erfan from '../Assets/Erfan.jpeg'
-import Ayeen2 from '../Assets/Ayeen2.jpeg';
+import Didgah from '../Assets/Didgah.jpg'
+import Erfan from '../Assets/Erfan.jpg'
+import Ayeen2 from '../Assets/Ayeen2.jpg';
 import Daramadi2 from '../Assets/Daramadi2.jpg'
-import Didgah2 from '../Assets/Didgah2.jpeg'
-import Erfan2 from '../Assets/Erfan2.jpeg'
+import Didgah2 from '../Assets/Didgah2.jpg'
+import Erfan2 from '../Assets/Erfan2.jpg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -72,11 +72,12 @@ const useStyles = makeStyles((theme) => ({
   },
   resha: {
     maxWidth: 345,
-    marginBottom: '5vh'
+    marginBottom: '5vh',
   },
   cityname: {
       fontFamily: 'nassim',
-      textAlign: 'center!important'
+      textAlign: 'center!important',
+      fontSize: '1.4vw'
   }
 }));
 //

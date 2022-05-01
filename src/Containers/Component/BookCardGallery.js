@@ -72,7 +72,8 @@ const useStyles = makeStyles((theme) => ({
   },
   cityname: {
       fontFamily: 'nassim',
-      textAlign: 'center!important'
+      textAlign: 'center!important',
+      fontSize: '1.4vw'
   }
 }));
 //

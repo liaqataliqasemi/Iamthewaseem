@@ -71,12 +71,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '15px',
   },
   resha: {
-    maxWidth: 345,
-    marginBottom: '5vh'
+    maxWidth: 450,
+    marginBottom: '5vh',
   },
   cityname: {
       fontFamily: 'nassim',
-      textAlign: 'center!important'
+      textAlign: 'center!important',
+      fontSize: '1.4vw'
   }
 }));
 //
@@ -89,7 +90,7 @@ export default function AutoGrid() {
           <Grid item xs={12} sm={4} md={2}>
               <Card elevation={5} className={classes.resha}>
                   <CardActionArea>
-                  <a href="/Ensan_shinakhti_vol_one" className={classes.cityname}>
+                      <a href="/Ensan_shinakhti_vol_one" className={classes.cityname}>
                       <CardMedia
                       component="img"
                       alt="Bidel"

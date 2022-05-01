@@ -75,11 +75,13 @@ const useStyles = makeStyles((theme) => ({
   },
   resha: {
     maxWidth: 345,
-    marginBottom: '5vh'
+    marginBottom: '5vh',
+    height: '50vh'
   },
   cityname: {
       fontFamily: 'nassim',
-      textAlign: 'center!important'
+      textAlign: 'center!important',
+      fontSize: '1vw'
   }
 }));
 //

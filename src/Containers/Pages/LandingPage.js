@@ -12,6 +12,7 @@ import kawish1 from '../Assets/Elyas1.jpg';
 import BookGallery3 from '../Component/BookCardGallery3';
 import BookGallery2 from '../Component/BookCardGallery2';
 import BookGallery1 from '../Component/BookCardComplete';
+
 // import Ayeen from '../Assets/AyeenZahidFront.jpeg';
 // import bidel1 from '../Assets/Bidel1.jpg'
 // import bidel2 from '../Assets/Bidel2.jpg'
@@ -165,7 +166,8 @@ const LandingPage = () => {
                     <p  className='title2'>
                      مجلد های موجود انسان‌شناختی
                     </p>
-                    <BookGallery1/>
+                    {/* <BookGallery1/> */}
+                    <BookCard/>
                 </div>
                 <div>
                     <div class="custom-shape-divider-top-1651252755">

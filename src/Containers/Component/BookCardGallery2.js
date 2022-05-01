@@ -4,12 +4,12 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import Majmo from '../Assets/Majmo.jpg'
-import Manteq from '../Assets/Manteq.jpeg'
+import Manteq from '../Assets/Manteq.jpg'
 import Nazaria from '../Assets/Nazaria.jpg'
-import Rohe from '../Assets/Rohe.jpeg';
+import Rohe from '../Assets/Rohe.jpg';
 import Majmo2 from '../Assets/Majmo2.jpg'
-import Manteq2 from '../Assets/Manteq2.jpeg'
-import Rohe2 from '../Assets/Rohe2.jpeg';
+import Manteq2 from '../Assets/Manteq2.jpg'
+import Rohe2 from '../Assets/Rohe2.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -72,11 +72,12 @@ const useStyles = makeStyles((theme) => ({
   },
   resha: {
     maxWidth: 345,
-    marginBottom: '5vh'
+    marginBottom: '5vh',
   },
   cityname: {
       fontFamily: 'nassim',
-      textAlign: 'center!important'
+      textAlign: 'center!important',
+      fontSize: '1.4vw'
   }
 }));
 
