@@ -12,6 +12,7 @@ import Daramadi2 from '../Assets/Daramadi2.jpg'
 import Didgah2 from '../Assets/Didgah2.jpg'
 import Erfan2 from '../Assets/Erfan2.jpg'
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -84,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
 export default function AutoGrid() {
   const classes = useStyles();
   return (
-    <div style={{ padding: '1em', paddingBottom: '4em'}}>
+    <div style={{ padding: '1em'}}>
         <div style={{display: 'flex', justifyContent: 'center'}}>
           <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
             <Grid item xs={12} sm={4} md={2}>
