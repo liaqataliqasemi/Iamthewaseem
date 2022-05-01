@@ -91,7 +91,11 @@ export default function CenteredGrid() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
-              <Box className={classes.paper}>
+              <Box                
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+              >
                 <ElyasCard/>
               </Box>
             </Grid>
