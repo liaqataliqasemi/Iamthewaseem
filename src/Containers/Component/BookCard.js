@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'titr',
     textAlign: 'center!important',
     color: '#445e79!important',
-    fontSize: '1vw'
+    fontSize: '1em'
 }
 }));
 //
