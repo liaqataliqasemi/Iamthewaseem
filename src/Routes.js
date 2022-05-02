@@ -14,6 +14,7 @@ import Amazon from './Containers/Pages/Amazon';
 import Paypal from './Containers/Pages/Paypal';
 import Buy from './Containers/Pages/Buy';
 import Contact from './Containers/Pages/Contact';
+import Construction from './Containers/Pages/Construction'
 
 
 class Routes extends Component {
@@ -31,7 +32,7 @@ class Routes extends Component {
                             <Route path="/Ensan_shinakhti_vol_three" exact component={Ensan3}/>
                             <Route path="/Ensan_shinakhti_vol_four" exact component={Ensan4}/>
                             <Route path="/Amazon" exact component={Amazon}/>
-                            <Route path="/PayPal" exact component={Paypal}/>
+                            <Route path="/PayPal" exact component={Construction}/>
                             <Route path="/Books" exact component={Books}/>
                             <Route path="/Buy" exact component={Buy}/>
                             <Route path="/ContactUs" exact component={Contact}/>

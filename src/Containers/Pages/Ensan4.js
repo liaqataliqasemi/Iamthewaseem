@@ -65,7 +65,7 @@ export default function CenteredGrid() {
                 alignItems="center"
                 padding="2vh 0"
               >
-                <img src={oneside} alt="kawish" height="auto" width="390vw" style={{borderRadius: '25px'}} />
+                <img src={oneside} alt="kawish" height="auto" width="390vw" />
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
@@ -75,7 +75,7 @@ export default function CenteredGrid() {
                 alignItems="center"
                 padding="2vh 0"
               >
-                <img src={BedilVol41} alt="kawish" height="auto" width="390vw" style={{borderRadius: '25px'}} />
+                <img src={BedilVol41} alt="kawish" height="auto" width="390vw" />
               </Box>
             </Grid>
           </Grid>
