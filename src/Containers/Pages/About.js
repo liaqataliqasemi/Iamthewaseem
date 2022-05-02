@@ -21,10 +21,11 @@ const useStyles = makeStyles((theme) => ({
   },
   para: {
     fontFamily: 'vazir',
-    lineHeight: '4em',
+    lineHeight: '2.4em',
     textAlign: 'justify',
     fontSize: '16px',
-    fontWeight: 300
+    fontWeight: 300,
+    marginBottom: '1.5em'
   },
   image: {
     height: '25vh', 
@@ -82,9 +83,8 @@ export default function CenteredGrid() {
                 <p className={classes.para}>
                     دپلم انجینیر سید الیاس کاوش
                     <br/>
-                    رئیس انتشارات انسان
-                </p>
-                <p className={classes.para}>
+                    رئیس انتشارات انسان<br/>
+
     17
     اپریل 2022 مطابق  28 حمل
     1401</p>

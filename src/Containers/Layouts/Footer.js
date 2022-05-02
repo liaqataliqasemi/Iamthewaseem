@@ -9,7 +9,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import { Box } from '@material-ui/core';
 import './Footer.css';
-
+// eslint-disable-next-line
 const str = new Date().toLocaleDateString('fa-IR');
 function Copyright() {
     return (
@@ -58,7 +58,7 @@ const Footer = () => {
             </Grid> 
           <Grid item xs={12} sm={12}>
             <div style={{textAlign: 'center'}}>
-              <Typography  style={{color: '#023b59', fontFamily: 'nassim', fontSize: '1.2em' , lineHeight: '2em', marginBottom: '1.5rem'}}>ما را در صفحات اجتماعی دنبال کنید!</Typography>
+              <Typography  style={{color: '#023b59', fontFamily: 'nassim', fontSize: '1.2em' , lineHeight: '2em', marginBottom: '1.5rem'}}>انتشارات انسان را در صفحات اجتماعی دنبال کنید!</Typography>
                 <div className="footercontainer2">
                   <a href="https://www.facebook.com/Ensan-Publishers-%D8%A7%D9%86%D8%AA%D8%B4%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%86%D8%B3%D8%A7%D9%86-106264118730722" rel="noreferrer"  target="_blank"><FacebookRoundedIcon style={{color: '#4267B2', margin: '0 0.2em', fontSize: '2.5em'}} /></a>&nbsp;
                   {/* <a href="https://www.Instgram.com"><InstagramIcon style={{color: 'crimson ', margin: '0 0.2em', fontSize: '2.5em'}}/></a>&nbsp; */}

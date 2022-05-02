@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
   resha: {
     maxWidth: 345,
     marginBottom: '5vh',
-    backgroundColor: '#005691',
+    backgroundColor: '#445e79',
   },
   cityname: {
       fontFamily: 'nassim',
@@ -116,7 +116,7 @@ export default function AutoGrid() {
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
                       <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_one">
-                          <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                          <Typography  className={classes.button}>
                           مجلد اول
                           </Typography> 
                       </Button>
@@ -135,8 +135,8 @@ export default function AutoGrid() {
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
                         <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_one">
-                            <Typography  className={classes.buttonenglish} gutterBottom variant="h5" component="h5">
-                            Bidel's Anthropologie Vol. 1
+                            <Typography  className={classes.buttonenglish}  variant="h5" component="h5">
+                           Volume 1
                             </Typography> 
                         </Button>
                       </CardContent>
@@ -154,7 +154,7 @@ export default function AutoGrid() {
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
                         <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_two">
-                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            <Typography  className={classes.button}  variant="h5" component="h5">
                             مجلد دوم
                             </Typography> 
                         </Button>
@@ -173,8 +173,8 @@ export default function AutoGrid() {
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
                         <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_two">
-                            <Typography  className={classes.buttonenglish} gutterBottom variant="h5" component="h5">
-                            Bidel's Anthropologie Vol. 2
+                            <Typography  className={classes.buttonenglish}  variant="h5" component="h5">
+                            Volume 2
                             </Typography> 
                         </Button>
                       </CardContent>
@@ -196,7 +196,7 @@ export default function AutoGrid() {
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
                         <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_three">
-                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            <Typography  className={classes.button}  variant="h5" component="h5">
                             مجلد سوم
                             </Typography> 
                         </Button>
@@ -215,8 +215,8 @@ export default function AutoGrid() {
                       />
                         <CardContent style={{display:'flex', justifyContent: 'center'}}>
                         <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_three">
-                            <Typography  className={classes.buttonenglish} gutterBottom variant="h5" component="h5">
-                            Bidel's Anthropologie Vol. 3
+                            <Typography  className={classes.buttonenglish}  variant="h5" component="h5">
+                            Volume 3
                             </Typography> 
                         </Button>
                       </CardContent>
@@ -234,7 +234,7 @@ export default function AutoGrid() {
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
                         <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_four">
-                            <Typography  className={classes.button} gutterBottom variant="h5" component="h5">
+                            <Typography  className={classes.button}  variant="h5" component="h5">
                             مجلد چهارم
                             </Typography> 
                         </Button>
@@ -253,8 +253,8 @@ export default function AutoGrid() {
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
                         <Button size="medium" variant="contained" style={{backgroundColor: 'white'}} href="/Ensan_shinakhti_vol_four">
-                            <Typography  className={classes.buttonenglish} gutterBottom variant="h5" component="h5">
-                            Bidel's Anthropologie Vol. 4
+                            <Typography  className={classes.buttonenglish}  variant="h5" component="h5">
+                            Volume 4
                             </Typography> 
                         </Button>
                       </CardContent>
