@@ -49,11 +49,11 @@ const Footer = () => {
               </div>
               <div className="footercontainer">
                 <div><a href="/">خانه</a></div>
-                <div><a href="/Books">کتاب ها</a></div>
+                <div><a href="/Books">کتاب‌ها</a></div>
                 <div><a href="/Author">نویسنده</a></div>
                 <div><a href="/Buy">خرید کتاب</a></div>
-                <div><a href="/AboutUs">دربارۀ ما</a></div>
-                <div> <a href="/ContactUs">تماس با ما</a></div>
+                <div><a href="/AboutUs">دربارۀ انتشارات</a></div>
+                <div> <a href="/ContactUs">تماس با انتشارات</a></div>
               </div>
             </Grid> 
           <Grid item xs={12} sm={12}>

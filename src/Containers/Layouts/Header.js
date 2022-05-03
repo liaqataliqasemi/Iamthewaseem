@@ -109,7 +109,7 @@ const { mobileView, drawerOpen } = state;
 {/* menu tabs */}
     <div className='titr' style={{paddingRight: '3vw'}}>
         <div className="dropdown">
-            <Button style={{fontSize: '19px', marginRight: '15px'}} href="/Books" className="dropbtn">کتاب ها</Button>
+            <Button style={{fontSize: '19px', marginRight: '15px'}} href="/Books" className="dropbtn">کتاب‌ها</Button>
                 <div className="dropdown-content">
                         <a className='vazir' href="/Ensan_shinakhti_vol_one">انسان‌شناختی بیدل مجلد اول</a>   
                         <a className='vazir' href="/Ensan_shinakhti_vol_two">انسان‌شناختی بیدل مجلد دوم</a>
@@ -132,10 +132,10 @@ const { mobileView, drawerOpen } = state;
             </div>
         </div>
         <div className="dropdown">
-            <Button  style={{fontSize: '19px', marginRight: '15px'}} href="/AboutUs" className="dropbtn">درباره‌ی ما</Button>
+            <Button  style={{fontSize: '19px', marginRight: '15px'}} href="/AboutUs" className="dropbtn"> دربارۀ انتشارات</Button>
         </div>
         <div className="dropdown">
-            <Button style={{fontSize: '19px', marginRight: '15px'}} href="/ContactUs" className="dropbtn">تماس با ما</Button>
+            <Button style={{fontSize: '19px', marginRight: '15px'}} href="/ContactUs" className="dropbtn">تماس با انتشارات</Button>
         </div>
     </div>
     </Toolbar>
@@ -192,7 +192,7 @@ const { mobileView, drawerOpen } = state;
               </IconButton>
               </div>
               <Divider variant="middle" />
-              <Button href="/Books" style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto', fontSize: '1.2em'}}>کتاب ها</Button>
+              <Button href="/Books" style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto', fontSize: '1.2em'}}>کتاب‌ها</Button>
                 <div className={drawerContainer}>
                   <a className={menuItem} href="/Ensan_shinakhti_vol_one">انسان‌شناختی بیدل مجلد اول<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                   <a className={menuItem} href="/Ensan_shinakhti_vol_two">انسان‌شناختی بیدل مجلد دوم<ChevronLeftIcon style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
@@ -213,11 +213,11 @@ const { mobileView, drawerOpen } = state;
                 </div>
               <Divider variant="middle" /> 
                 <a style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}} href="/AboutUs">
-                  <Typography style={{fontFamily: 'titr', color: '#023B59', marginLeft: 'auto'}}>درباره‌ی ما</Typography>
+                  <Typography style={{fontFamily: 'titr', color: '#023B59', marginLeft: 'auto'}}> دربارۀ انتشارات</Typography>
                 </a>
                 <Divider variant="middle" /> 
                 <a style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}} href="/ContactUs">
-                  <Typography style={{fontFamily: 'titr', color: '#023B59', marginLeft: 'auto'}}>تماس با ما</Typography>
+                  <Typography style={{fontFamily: 'titr', color: '#023B59', marginLeft: 'auto'}}>تماس با انتشارات</Typography>
                 </a>
                 <Divider variant="middle" /> 
                 <Typography style={{fontFamily: 'nassim', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>     کلیۀ حقوق این وب‌سایت متعلق به‌انتشارات انسان است.</Typography>

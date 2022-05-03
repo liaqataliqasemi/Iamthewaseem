@@ -7,6 +7,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import BuyButton from './BuyButton';
 import { Box } from '@material-ui/core';
 import BuyNew from '../Component/BuyButtonNewTab';
+import Avatar from '@mui/material/Avatar';
+import Ensan from '../Assets/ensan.jpg';
+import Amazon from '../Assets/Amazon.svg';
+import Paypal from '../Assets/PayPal.svg';
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -23,10 +27,11 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>
-             انتشارات انسان
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+          <Avatar sx={{ width: 50, height: 50 }} alt="Ensan Publishers" src={Ensan} />
           </Typography>
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF', fontSize: '1em' }}>خرید از طریق ویب‌سایت انتشارات انسان</Typography>
+          
+          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF', fontSize: '1.5em' }}>خرید مستقیم از انتشارات انسان</Typography>
         </AccordionSummary>
         <AccordionDetails>
                 <Box
@@ -45,9 +50,11 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>آمازون</Typography>
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir' , color: '#3F72AF', fontSize: '1em'}}>
-          خرید از طریق ویب‌سایت آمازون
+          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>
+          <Avatar sx={{ width: 50, height: 50 }} alt="Amazon" src={Amazon} />
+            </Typography>
+          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir' , color: '#3F72AF', fontSize: '1.5em'}}>
+          خرید از ویب‌سایت آمازون
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -57,7 +64,7 @@ export default function ControlledAccordions() {
                 alignItems="center"
                 padding="2vh 0"
                 >
-                 <BuyNew text="خرید" link="https://www.amazon.com/gp/offer-listing/B09ZDDC293"/> 
+                 <BuyNew text="خرید" link="https://www.amazon.com/gp/offer-listing/B09ZDDC293"/>  
                 </Box>
         </AccordionDetails>
       </Accordion>
@@ -68,10 +75,10 @@ export default function ControlledAccordions() {
           id="panel3bh-header"
         >
           <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>
-             پی‌‌پال
+          <Avatar sx={{ width: 50, height: 50 }} alt="Paypal" src={Paypal} />
           </Typography>
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF', fontSize: '1em' }}>
-          خرید از طریق پی‌‌پال 
+          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF', fontSize: '1.5em' }}>
+          خرید از پی‌‌پال 
           </Typography>
         </AccordionSummary>
             <AccordionDetails>

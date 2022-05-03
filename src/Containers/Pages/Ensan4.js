@@ -80,10 +80,10 @@ export default function CenteredGrid() {
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
               <p className={classes.para1}>
-              علاقه‌مندان به‌هدف دریافت کتاب مذکور به گزینه های ذیل مراجعه بفرمایند.
+              علاقه‌مندان به‌هدف دریافت کتاب مذکور به‌گزینه‌های ذیل مراجعه بفرمایند.
               </p>
               <Box
-                display="flex"
+                display="inline"
                 justifyContent="center"
                 alignItems="center"
                 padding="0"
