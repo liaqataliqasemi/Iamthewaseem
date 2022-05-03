@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: '0.2em 1em',
-    background: '#F9F7F7'
+    background: '#fff'
   },
   paper: {
     padding: theme.spacing(12),
@@ -75,7 +75,7 @@ export default function CenteredGrid() {
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
               <p className={classes.para1}>
-              علاقه‌مندان به‌ هدف دریافت مجلد سوم انسان‌شناختی بیدل به گزینه های ذیل مراجعه بفرمایند.
+              علاقه‌مندان به‌هدف دریافت مجلد سوم انسان‌شناختی بیدل به گزینه های ذیل مراجعه بفرمایند.
               </p>
               <Box
                 display="flex"

@@ -9,8 +9,7 @@ import BedilVol2 from '../Assets/BedilVol2.jpg';
 import BedilVol3 from '../Assets/BedilVol3.jpg';
 import BedilVol1 from '../Assets/BedilVol1.jpg';
 import BedilVol4 from '../Assets/BedilVol4.jpg';
-import BuyButton from './BuyButton';
-
+import BuyButton from './BuyButtonNewTab';
 
 const useStyles = makeStyles((theme) => ({
   root: {

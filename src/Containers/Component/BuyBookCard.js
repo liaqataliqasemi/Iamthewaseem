@@ -12,6 +12,7 @@ import BedilVol4 from '../Assets/BedilVol4.jpg';
 import BuyButton from './BuyButton';
 
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,

@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     fontSize: '2.6em',
     color: '#112D4E',
+    background: '#fff!important'
   },
   para: {
     fontFamily: 'vazir',
@@ -79,7 +80,7 @@ export default function CenteredGrid() {
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
               <p className={classes.para1}>
-              علاقه‌مندان به‌ هدف دریافت کتاب مذکور به گزینه های ذیل مراجعه بفرمایند.
+              علاقه‌مندان به‌هدف دریافت کتاب مذکور به گزینه های ذیل مراجعه بفرمایند.
               </p>
               <Box
                 display="flex"

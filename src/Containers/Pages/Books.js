@@ -55,7 +55,7 @@ export default function CenteredGrid() {
         <Grid className={classes.gridSpace} container spacing={2}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
                 <p className={classes.header}>
-                علاقه‌مندان به‌هدف دریافت هریکی از مجلدات اثر  انسان شناختی بیدل به صفحه‌ی خرید کتاب مراجعه بفرمایند.
+                علاقه‌مندان به‌هدف دریافت هر یکی از مجلدات اثر انسان شناختی بیدل به‌صفحه‌ی خرید کتاب مراجعه بفرمایند.
                 </p>
                 <BookCard/>
                 <p className={classes.h1}>

@@ -126,7 +126,7 @@ const { mobileView, drawerOpen } = state;
         <div className="dropdown">
             <Button href="/buy" style={{fontSize: '19px', marginRight: '15px'}} className="dropbtn">خرید کتاب</Button>
             <div className="dropdown-content">
-                <a className='vazir' href="/BuyHere">خرید کتاب از طریق انتشارات انسان</a>
+                <a className='vazir' href="/BuyHere">خرید کتاب از انتشارات انسان</a>
                 <a className='vazir' href="/Amazon">خرید کتاب از آمازون</a>
                 <a className='vazir' href="https://paypal.me/ensanpublishers">خرید کتاب با پی‌پال</a>
             </div>
@@ -207,7 +207,7 @@ const { mobileView, drawerOpen } = state;
               <Divider variant="middle" />  
               <Button href="/Buy" style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto', fontSize: '1.2em'}}>خرید کتاب</Button>
                 <div className={drawerContainer}>
-                  <a className={menuItem} href="/BuyHere">خرید کتاب از طریق انتشارات انسان<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
+                  <a className={menuItem} href="/BuyHere">خرید کتاب از انتشارات انسان<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                   <a className={menuItem} href="/Amazon">خرید کتاب از آمازون<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                   <a className={menuItem} href="https://paypal.me/ensanpublishers">	خرید کتاب با پی‌پال<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                 </div>
@@ -220,7 +220,7 @@ const { mobileView, drawerOpen } = state;
                   <Typography style={{fontFamily: 'titr', color: '#023B59', marginLeft: 'auto'}}>تماس با ما</Typography>
                 </a>
                 <Divider variant="middle" /> 
-                <Typography style={{fontFamily: 'nassim', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>کلیه حقوق این ویب‌سایت متعلق به انتشارات انسان می‌باشد.</Typography>
+                <Typography style={{fontFamily: 'nassim', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}}>     کلیۀ حقوق این وب‌سایت متعلق به‌انتشارات انسان است.</Typography>
           </Drawer>
               <a href="/"><img src={logos1} alt="logo" height='50vh' width = 'auto' /></a> &nbsp;
         </Toolbar>

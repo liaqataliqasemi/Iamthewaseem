@@ -55,19 +55,19 @@ export default function CenteredGrid() {
             </svg>
         </div>
         <p className={classes.h1}>خریداری کتاب</p>
-        <p className={classes.para}>علاقه‌مندان به‌ هدف دریافت هریکی از مجلدات انسان‌شناختی بیدل به لینک های ذیل مراجعه بفرمایند.</p>
+        <p className={classes.para}>علاقه‌مندان به‌هدف دریافت هر یکی از مجلدات انسان‌شناختی بیدل به‌لینک های ذیل مراجعه بفرمایند.</p>
       </div>
       
       <div>
           <Grid style={{display: 'flex', justifyContent: 'center', }} container spacing={1}>
                 <Grid style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={12} md={4} lg={4}>
-                    <FlipImage aks={Logo} text="خریداری مستقیم از انتشرات انسان" link="/Buyhere"/>
+                    <FlipImage aks={Logo} text="خریداری مستقیم از انتشارات انسان" link="/Buyhere" blank="__blank"/>
                 </Grid>
                 <Grid style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={12} md={4} lg={4}>
-                  <FlipImage aks={Amazon} text="خریداری از طریق آمازون/Amazon" link="/Amazon"/>
+                  <FlipImage aks={Amazon} text="خریداری از آمازون/Amazon" link="/Amazon"/>
                 </Grid>
                 <Grid style={{display: 'flex', justifyContent: 'center', }}  item xs={12} sm={12} md={4} lg={4}>
-                  <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال/PayPal" link="https://paypal.me/ensanpublishers"/>  
+                  <FlipImage aks={Paypal} text="خریداری از پی‌پال/PayPal" link="https://paypal.me/ensanpublishers"/>  
                 </Grid>
           </Grid>
       </div>

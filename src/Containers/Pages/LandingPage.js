@@ -11,10 +11,7 @@ import kawish from '../Assets/ostad1.jpg';
 import kawish1 from '../Assets/Elyas1.jpg';
 import BookGallery3 from '../Component/BookCardGallery3';
 import BookGallery2 from '../Component/BookCardGallery2';
-import Amazon from '../Assets/Amazon.svg';
-import Paypal from '../Assets/PayPal.svg';
-import Logo from '../Assets/buylogo.png'
-import Avatar from '../Component/BuyAvatar';
+import BuyNew from '../Component/BuyButtonNewTab';
 
 
 // import Ayeen from '../Assets/AyeenZahidFront.jpeg';
@@ -144,7 +141,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div>
-                    <Grid container spacing={1}>
+                    <Grid container spacing={1} style={{marginBottom: '4vh'}}>
                         <Grid item xs={12} sm={12} md={8} lg={8}>
                             <Box className='center'>
                                 <p className='para2'> 
@@ -158,11 +155,11 @@ const LandingPage = () => {
                                     زیبا تازه از چاپ برآمده است، فراچنگ آورید.
                                 <br/>
                                 <br/>
-                                <Buy link="/Volume4" text="خرید از ما" type="contained"/>
+                                <Buy link="/Volume4" text="خرید از انتشارات انسان" type="contained"/>
                                 <br/>
-                                <Buy link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از آمازون" type="contained"/>
+                                <BuyNew link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از آمازون" type="contained"/>
                                 <br/>
-                                <Buy link="https://www.paypal.com/paypalme/ensanpublishers" text="خرید از پی‌پال" type="contained"/>
+                                <BuyNew link="https://www.paypal.com/paypalme/ensanpublishers" text="خرید از پی‌پال" type="contained"/>
                                 </p>
                             </Box>
                         </Grid>

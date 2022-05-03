@@ -58,8 +58,7 @@ export default function CenteredGrid() {
                     <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
                 </svg>
             </div>
-            <p className={classes.h1}>خریداری کتاب</p>
-            <p className={classes.paratop}>اکنون شما می‌توانید هر چهار مجلدات انسان‌شناختی بیدل را از اینجا بدست آورید.</p>
+            <p className={classes.h1}>خریداری کتاب از انتشارات انسان</p>
         </div>
         <Grid  container spacing={1}>
             <Grid item xs={12} sm={12} md={12} lg={12}>

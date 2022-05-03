@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import BuyButton from './BuyButton';
 import { Box } from '@material-ui/core';
+import BuyNew from '../Component/BuyButtonNewTab';
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -56,7 +57,7 @@ export default function ControlledAccordions() {
                 alignItems="center"
                 padding="2vh 0"
                 >
-                 <BuyButton text="خرید" link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp"/> 
+                 <BuyNew text="خرید" link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp"/> 
                 </Box>
         </AccordionDetails>
       </Accordion>
@@ -80,7 +81,7 @@ export default function ControlledAccordions() {
                 alignItems="center"
                 padding="2vh 0"
                 >
-                 <BuyButton text="خرید" link="https://paypal.me/ensanpublishers"/> 
+                 <BuyNew text="خرید" link="https://paypal.me/ensanpublishers"/> 
                 </Box>
         </AccordionDetails>
       </Accordion>
