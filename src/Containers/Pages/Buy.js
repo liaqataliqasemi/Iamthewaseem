@@ -59,7 +59,7 @@ export default function CenteredGrid() {
       </div>
       
       <div>
-          <Grid style={{display: 'flex', justifyContent: 'center', }} container spacing={1}>
+          <Grid style={{display: 'flex', justifyContent: 'center', marginBottom: '5vh' }} container spacing={1}>
                 <Grid style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={12} md={4} lg={4}>
                     <FlipImage aks={Logo} text="خریداری مستقیم از انتشارات انسان" link="/Buyhere" blank="__blank"/>
                 </Grid>
