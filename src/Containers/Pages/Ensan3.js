@@ -61,10 +61,6 @@ export default function CenteredGrid() {
             مجلد سوم انسان‌شناختی بیدل، شناخت‌شناختی و روش‌شناختی او در 674 صفحه در سال
             1395 / 2017 به‌چاپ رسیده است.
         </p>
-        <p className={classes.para} style={{marginBottom: '0!important', color: '#3F72AF'}}>
-              برای خرید مجلد سوم ”انسان‌شناختی بیدل“ به‌‌آدرس ایمیل و یا شماره تلفن
-              انتشارات انسان در تماس شوید. 
-          </p>
       </div>
           <Grid className={classes.gridSpace} container spacing={2}>
             <Grid item xs={12} sm={12} md={4} lg={4}>

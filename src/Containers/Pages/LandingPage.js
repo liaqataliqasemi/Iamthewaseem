@@ -14,6 +14,7 @@ import BookGallery2 from '../Component/BookCardGallery2';
 import Amazon from '../Assets/Amazon.svg';
 import Paypal from '../Assets/PayPal.svg';
 import Logo from '../Assets/buylogo.png'
+import Avatar from '../Component/BuyAvatar';
 
 
 // import Ayeen from '../Assets/AyeenZahidFront.jpeg';
@@ -157,14 +158,21 @@ const LandingPage = () => {
                                     زیبا تازه از چاپ برآمده است، فراچنگ آورید.
                                 <br/>
                                 <br/>
+                                <Buy link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از ما" type="contained"/>
+                                <br/>
                                 <Buy link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از آمازون" type="contained"/>
                                 <br/>
-                                <Buy link="/paypal" text="خرید از پی‌پال" type="contained"/>
+                                <Buy link="https://www.paypal.com/paypalme/ensanpublishers" text="خرید از پی‌پال" type="contained"/>
                                 </p>
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} lg={4}>
-                            <Box className='ketab'>
+                            <Box
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                                margin= "25px 0"
+                            >
                                 <FlipImage aks={Vol4} text="انسان‌شناختی بیدل بخش پنجم"/>
                             </Box>
                         </Grid>
@@ -183,19 +191,7 @@ const LandingPage = () => {
                             <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
                         </svg>
                     </div>
-                    <p  className='title8'>
-                       خریداری کتاب
-                    </p>
                 </div>
-                <Grid style={{marginBottom: '5vh'}} container spacing={1}>
-                    <Grid item xs={12} sm={12} md={12} lg={12}>
-                        <Box className={classes.paper}>
-                            <FlipImage aks={Logo} text="خریداری مستقیم از انتشرات انسان" />
-                            <FlipImage aks={Amazon} text="خریداری از طریق آمازون/Amazon" link="/Amazon"/>
-                            <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال/PayPal" link="https://paypal.me/ensanpublishers"/>
-                        </Box>
-                    </Grid>
-                </Grid>
                 <div>
                     <Grid container spacing={1}>
                         <Grid item xs={12} sm={12} md={8} lg={8}>

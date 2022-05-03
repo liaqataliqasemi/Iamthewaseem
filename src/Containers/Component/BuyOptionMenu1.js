@@ -22,10 +22,10 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.4em', color: '#112D4E' }}>
+          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>
              انتشارات انسان
           </Typography>
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF' }}>خرید از طریق ویب‌سایت انتشارات انسان</Typography>
+          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF', fontSize: '1em' }}>خرید از طریق ویب‌سایت انتشارات انسان</Typography>
         </AccordionSummary>
         <AccordionDetails>
                 <Box
@@ -44,8 +44,8 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.4em', color: '#112D4E' }}>آمازون</Typography>
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir' , color: '#3F72AF'}}>
+          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>آمازون</Typography>
+          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir' , color: '#3F72AF', fontSize: '1em'}}>
           خرید از طریق ویب‌سایت آمازون
           </Typography>
         </AccordionSummary>
@@ -66,10 +66,10 @@ export default function ControlledAccordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.4em', color: '#112D4E' }}>
+          <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>
              پی‌‌پال
           </Typography>
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF' }}>
+          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF' , fontSize: '1em'}}>
           خرید از طریق پی‌‌پال 
           </Typography>
         </AccordionSummary>

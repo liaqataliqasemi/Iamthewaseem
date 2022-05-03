@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     padding: '0.2em 1em',
-    background: '#F9F7F7'
+    background: '#fff',
+    overflow: 'hidden'
   },
   paper: {
     padding: theme.spacing(12),
@@ -54,7 +55,7 @@ gridSpace:{
 export default function CenteredGrid() {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
       <h1 className={classes.h1}>خریداری مجلد سوم انسان‌شناختی بیدل</h1>
       <Grid className={classes.gridSpace} container spacing={2}>
         <Grid item xs={12} sm={12} md={4} lg={4}>

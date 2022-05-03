@@ -12,8 +12,8 @@ import Logo from '../Assets/buylogo.png'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    padding: '0.2em 2vw',
-    backgroundColor: 'white!important'
+    backgroundColor: 'white!important',
+    overflow: 'hidden'
   },
   h1:{
     fontFamily: 'titr',
@@ -35,17 +35,16 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     textAlign: 'center'
   },
-  paper:{
-      display: 'flex',
-      justifyContent: 'space-evenly',
-      flexDirection: 'row'
+  gridSpace:{
+    display: 'flex',
+    justifyContent: 'center'
   }
 }));
 
 export default function CenteredGrid() {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
       {/* <div className='header'>
           
       </div> */}
@@ -59,14 +58,16 @@ export default function CenteredGrid() {
         <p className={classes.para}>علاقه‌مندان به‌ هدف دریافت هریکی از مجلدات انسان‌شناختی بیدل به لینک های ذیل مراجعه بفرمایند.</p>
       </div>
       
-      <div className={classes.root}>
-          <Grid className={classes.gridSpace} container spacing={1}>
-                <Grid item xs={12} sm={12} md={12} lg={12}>
-                    <Box className={classes.paper}>
-                        <FlipImage aks={Logo} text="خریداری مستقیم از انتشرات انسان" />
-                        <FlipImage aks={Amazon} text="خریداری از طریق آمازون/Amazon" link="/Amazon"/>
-                        <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال/PayPal" link="https://paypal.me/ensanpublishers"/>
-                    </Box>
+      <div>
+          <Grid style={{display: 'flex', justifyContent: 'center', }} container spacing={1}>
+                <Grid style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={12} md={4} lg={4}>
+                    <FlipImage aks={Logo} text="خریداری مستقیم از انتشرات انسان" link="/Buyhere"/>
+                </Grid>
+                <Grid style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={12} md={4} lg={4}>
+                  <FlipImage aks={Amazon} text="خریداری از طریق آمازون/Amazon" link="/Amazon"/>
+                </Grid>
+                <Grid style={{display: 'flex', justifyContent: 'center', }}  item xs={12} sm={12} md={4} lg={4}>
+                  <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال/PayPal" link="https://paypal.me/ensanpublishers"/>  
                 </Grid>
           </Grid>
       </div>
@@ -76,3 +77,5 @@ export default function CenteredGrid() {
 
 
 
+
+                        
