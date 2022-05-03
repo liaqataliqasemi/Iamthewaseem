@@ -6,8 +6,8 @@ import FlipImage from '../Component/FlipImage';
 import { Box } from '@material-ui/core';
 import oneside from '../Assets/BedilVol2.jpg';
 import twoside from '../Assets/BedilVol22.jpg';
-import purchase from '../Assets/ecomm2.svg';
 import BuyOptionMenu from '../Component/BuyOptionMenu2';
+import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,17 +63,7 @@ export default function CenteredGrid() {
         </p>
       </div>
           <Grid className={classes.gridSpace} container spacing={2}>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
-              <Box
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                padding="2vh 0"
-              >
-                <FlipImage aks={oneside} text={"انسان شناختی بیدل مجلد دوم"}/>                
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={8} lg={6}>
               <p className={classes.para1}>
               علاقه‌مندان به‌هدف دریافت مجلد دوم انسان‌شناختی بیدل به‌گزینه‌های ذیل مراجعه بفرمایند.
               </p>
@@ -81,21 +71,33 @@ export default function CenteredGrid() {
                 display="inline"
                 justifyContent="center"
                 alignItems="center"
-                padding="0"
+                margin="4vh 0"
               >
                 <BuyOptionMenu/>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid style={{display: 'flex', justifyContent: 'center' }} item xs={12} sm={12} md={3} lg={3}>
               <Box
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                padding="2vh 0"
+                margin="4vh 0"
+              >
+                <FlipImage aks={oneside} text={"انسان شناختی بیدل مجلد دوم"}/>                
+              </Box>
+            </Grid>
+            <Hidden mdDown>
+            <Grid style={{display: 'flex', justifyContent: 'center' }} item xs={12} sm={12} md={3} lg={3}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                margin="4vh 0"
               >
                 <FlipImage aks={twoside} text={"Bidel's Anthropologie Vol. 2"}/>              
               </Box>
             </Grid>
+            </Hidden>
           </Grid>
       </div>
     </div>

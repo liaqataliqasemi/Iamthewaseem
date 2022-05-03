@@ -6,6 +6,8 @@ import oneside from '../Assets/BedilVol4.jpg';
 import BedilVol41 from '../Assets/BedilVol41.jpg';
 import Kawishwriting from '../Assets/Kawishwriting.jpg';
 import BuyOptionMenu from '../Component/BuyOptionMenu4';
+import Hidden from '@material-ui/core/Hidden';
+import FlipImage from '../Component/FlipImage'; 
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -68,17 +70,7 @@ export default function CenteredGrid() {
       <div >
         <div>
           <Grid className={classes.gridSpace} container spacing={2}>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
-              <Box
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                padding="2vh 0"
-              >
-                <img src={oneside} alt="kawish" height="auto" width="390vw" />
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid item xs={12} sm={12} md={8} lg={6}>
               <p className={classes.para1}>
               علاقه‌مندان به‌هدف دریافت کتاب مذکور به‌گزینه‌های ذیل مراجعه بفرمایند.
               </p>
@@ -91,16 +83,28 @@ export default function CenteredGrid() {
                 <BuyOptionMenu/>
               </Box>
             </Grid>  
-            <Grid item xs={12} sm={12} md={4} lg={4}>
+            <Grid style={{display: 'flex', justifyContent: 'center' }} item xs={12} sm={12} md={3} lg={3}>
               <Box
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
                 padding="2vh 0"
               >
-                <img src={BedilVol41} alt="kawish" height="auto" width="390vw" />
+                <FlipImage aks={oneside} text={" انسان شناختی بیدل مجلد اول"}/>          
               </Box>
             </Grid>
+            <Hidden mdDown>
+            <Grid style={{display: 'flex', justifyContent: 'center' }} item xs={12} sm={12} md={3} lg={3}>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                padding="2vh 0"
+              >
+                <FlipImage aks={BedilVol41} text={"Bidel's Anthropologie Vol. 4"}/>        
+              </Box>
+            </Grid>
+            </Hidden>
           </Grid>
           <p className={classes.para}>
             <b>

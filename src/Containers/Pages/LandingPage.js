@@ -22,7 +22,7 @@ import BuyNew from '../Component/BuyButtonNewTab';
 // import Daramadi from '../Assets/Daramadi.jpg'
 // import Didgah from '../Assets/Didgah.jpeg'
 // import Erfan from '../Assets/Erfan.jpeg'
-// import Majmo from '../Assets/Majmo.jpg'
+// import Majmo from '../Assets/Majmo.jpg' 
 // import Manteq from '../Assets/Manteq.jpeg'
 // import Nazaria from '../Assets/Nazaria.jpg'
 // import Rohe from '../Assets/Rohe.jpeg';

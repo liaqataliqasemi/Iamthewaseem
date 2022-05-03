@@ -95,7 +95,7 @@ export default function AutoGrid() {
     <div style={{ padding: '1em', paddingBottom: '4em'}}>
         <div style={{display: 'flex', justifyContent: 'center'}}>
         <Grid spacing={4} container xs={12} style={{display: 'flex', justifyContent: 'center', }}>
-          <Grid item xs={12} sm={4} md={2}>
+        <Grid  style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={6} md={6} lg={2}>
               <Card elevation={15} className={classes.resha}>
                   <CardActionArea>
                       <CardMedia
@@ -116,7 +116,7 @@ export default function AutoGrid() {
 
           </Grid>
 
-          <Grid item xs={12} sm={4} md={2}>
+          <Grid  style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={6} md={6} lg={2}>
               <Card elevation={15} className={classes.resha}>
                   <CardActionArea>
                       <CardMedia
@@ -137,7 +137,7 @@ export default function AutoGrid() {
           </Grid>
 
 
-          <Grid item xs={12} sm={4} md={2}>
+          <Grid  style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={6} md={6} lg={2}>
               <Card elevation={15} className={classes.resha}>
                   <CardActionArea>
                       <CardMedia
@@ -157,7 +157,7 @@ export default function AutoGrid() {
               </Card>
           </Grid>
 
-          <Grid item xs={12} sm={4} md={2}>
+          <Grid  style={{display: 'flex', justifyContent: 'center', }} item xs={12} sm={6} md={6} lg={2}>
               <Card elevation={15} className={classes.resha}>
                   <CardActionArea>
                       <CardMedia
