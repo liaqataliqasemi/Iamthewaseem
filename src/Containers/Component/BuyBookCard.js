@@ -104,7 +104,7 @@ export default function AutoGrid() {
                       title="BedilVol1"
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
-                      <BuyButton text="خرید مجلد اول" link="/Vol1"/>
+                      <BuyButton text="خرید مجلد اول" link="/Volume1"/>
                       </CardContent>
                   </CardActionArea>
               </Card>
@@ -121,7 +121,7 @@ export default function AutoGrid() {
                       title="BedilVol2"
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
-                      <BuyButton text="خرید مجلد دوم" link="/Vol2"/>
+                      <BuyButton text="خرید مجلد دوم" link="/Volume2"/>
                       </CardContent>
                   </CardActionArea>
               </Card>
@@ -138,7 +138,7 @@ export default function AutoGrid() {
                       title="BedilVol3"
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
-                      <BuyButton text="خرید مجلد سوم" link="/Vol3"/>
+                      <BuyButton text="خرید مجلد سوم" link="/Volume3"/>
                       </CardContent>
                   </CardActionArea>
               </Card>
@@ -154,7 +154,7 @@ export default function AutoGrid() {
                       title="BedilVol4"
                       />
                       <CardContent style={{display:'flex', justifyContent: 'center'}}>
-                      <BuyButton text="خرید مجلد چهارم" link="/Vol4"/>
+                      <BuyButton text="خرید مجلد چهارم" link="/Volume4"/>
                       </CardContent>
                   </CardActionArea>
               </Card>
