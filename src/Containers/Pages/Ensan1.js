@@ -6,7 +6,7 @@ import FlipImage from '../Component/FlipImage';
 import { Box } from '@material-ui/core';
 import oneside from '../Assets/BedilVol1.jpg';
 import twoside from '../Assets/BedilVol12.jpg';
-import purchase from '../Assets/ecomm.svg';
+import BuyOptionMenu from '../Component/BuyOptionMenu1';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,6 +33,15 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 8500,
     marginTop: '1em'
   },
+  para1: {
+    fontFamily: 'vazir',
+    lineHeight: '2.4em',
+    textAlign: 'center',
+    fontSize: '1.5em',
+    fontWeight: 8500,
+    marginTop: '1em',
+    color: '#3F72AF'
+  },
   gridSpace:{
     display: 'flex',
     justifyContent: 'center'
@@ -53,10 +62,6 @@ export default function CenteredGrid() {
               جهان‌شناختی، و انسان‌شناختی بیدل آشنا می‌شود. این‌ مجلد حاوی 562 صفحه است
               که در سال 1389/2010 به‌چاپ رسیده است.
           </p>
-          <p className={classes.para} style={{marginBottom: '0!important', color: '#3F72AF'}}>
-              برای خرید مجلد اول ”انسان‌شناختی بیدل“ به‌‌آدرس ایمیل و یا شماره تلفن
-              انتشارات انسان در تماس شوید. 
-          </p>
       </div>
           <Grid className={classes.gridSpace} container spacing={2}>
             <Grid item xs={12} sm={12} md={4} lg={4}>
@@ -70,14 +75,16 @@ export default function CenteredGrid() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
+              <p className={classes.para1}>
+              علاقه‌مندان به‌ هدف دریافت مجلد اول انسان‌شناختی بیدل به گزینه های ذیل مراجعه بفرمایند.
+              </p>
               <Box
                 display="flex"
-                wrap= 'column'
                 justifyContent="center"
                 alignItems="center"
                 padding="0"
               >
-                <img alt="purchase" src={purchase} height="500vh" width="100%" top="0!important"/>
+                <BuyOptionMenu/>
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>

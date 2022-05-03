@@ -126,9 +126,10 @@ const { mobileView, drawerOpen } = state;
         <div className="dropdown">
             <Button href="/buy" style={{fontSize: '19px', marginRight: '15px'}} className="dropbtn">خرید کتاب</Button>
             <div className="dropdown-content">
-                        <a className='vazir' href="/Amazon">خرید کتاب از آمازون</a>
-                        <a className='vazir' href="/PayPal">خرید کتاب با پی‌پال</a>
-                </div>
+                <a className='vazir' href="/BuyHere">خرید کتاب از طریق انتشارات انسان</a>
+                <a className='vazir' href="/Amazon">خرید کتاب از آمازون</a>
+                <a className='vazir' href="https://paypal.me/ensanpublishers">خرید کتاب با پی‌پال</a>
+            </div>
         </div>
         <div className="dropdown">
             <Button  style={{fontSize: '19px', marginRight: '15px'}} href="/AboutUs" className="dropbtn">درباره‌ی ما</Button>
@@ -206,8 +207,9 @@ const { mobileView, drawerOpen } = state;
               <Divider variant="middle" />  
               <Button href="/Buy" style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto', fontSize: '1.2em'}}>خرید کتاب</Button>
                 <div className={drawerContainer}>
+                  <a className={menuItem} href="/BuyHere">خرید کتاب از طریق انتشارات انسان<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                   <a className={menuItem} href="/Amazon">خرید کتاب از آمازون<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
-                  <a className={menuItem} href="/PayPal">	خرید کتاب با پی‌پال<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
+                  <a className={menuItem} href="https://paypal.me/ensanpublishers">	خرید کتاب با پی‌پال<ChevronLeftIcon  style={{marginRight: '8px', color: '#023B59'}} fontSize="small" color="disabled"/></a>
                 </div>
               <Divider variant="middle" /> 
                 <a style={{fontFamily: 'titr', color: '#023B59', padding: '5px 15px', marginLeft: 'auto'}} href="/AboutUs">

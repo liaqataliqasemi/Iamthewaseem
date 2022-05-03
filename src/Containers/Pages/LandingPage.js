@@ -11,7 +11,10 @@ import kawish from '../Assets/ostad1.jpg';
 import kawish1 from '../Assets/Elyas1.jpg';
 import BookGallery3 from '../Component/BookCardGallery3';
 import BookGallery2 from '../Component/BookCardGallery2';
-import BookGallery1 from '../Component/BookCardComplete';
+import Amazon from '../Assets/Amazon.svg';
+import Paypal from '../Assets/PayPal.svg';
+import Logo from '../Assets/buylogo.png'
+
 
 // import Ayeen from '../Assets/AyeenZahidFront.jpeg';
 // import bidel1 from '../Assets/Bidel1.jpg'
@@ -84,6 +87,11 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
       overflow: 'hidden'
+    },
+    paper:{
+        display: 'flex',
+        justifyContent: 'space-evenly',
+        flexDirection: 'row'
     }
   }));
 
@@ -175,7 +183,19 @@ const LandingPage = () => {
                             <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
                         </svg>
                     </div>
+                    <p  className='title8'>
+                       خریداری کتاب
+                    </p>
                 </div>
+                <Grid style={{marginBottom: '5vh'}} container spacing={1}>
+                    <Grid item xs={12} sm={12} md={12} lg={12}>
+                        <Box className={classes.paper}>
+                            <FlipImage aks={Logo} text="خریداری مستقیم از انتشرات انسان" />
+                            <FlipImage aks={Amazon} text="خریداری از طریق آمازون/Amazon" link="/Amazon"/>
+                            <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال/PayPal" link="https://paypal.me/ensanpublishers"/>
+                        </Box>
+                    </Grid>
+                </Grid>
                 <div>
                     <Grid container spacing={1}>
                         <Grid item xs={12} sm={12} md={8} lg={8}>

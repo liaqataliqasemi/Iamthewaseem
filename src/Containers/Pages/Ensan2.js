@@ -7,6 +7,7 @@ import { Box } from '@material-ui/core';
 import oneside from '../Assets/BedilVol2.jpg';
 import twoside from '../Assets/BedilVol22.jpg';
 import purchase from '../Assets/ecomm2.svg';
+import BuyOptionMenu from '../Component/BuyOptionMenu2';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,6 +34,15 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 8500,
     marginTop: '1em'
   },
+  para1: {
+    fontFamily: 'vazir',
+    lineHeight: '2.4em',
+    textAlign: 'center',
+    fontSize: '1.5em',
+    fontWeight: 8500,
+    marginTop: '1em',
+    color: '#3F72AF'
+  },
   gridSpace:{
     display: 'flex',
     justifyContent: 'center'
@@ -51,10 +61,6 @@ export default function CenteredGrid() {
             مجلد دوم این اثر کلا حاوی پژوهش در هستی‌شناختی، جهان‌شناختی و انسان‌شناختی
             بیدل است که در 582 صفحه در سال 1391/2013 به‌چاپ رسیده است.
         </p>
-        <p className={classes.para} style={{marginBottom: '0!important', color: '#3F72AF'}}>
-              برای خرید مجلد دوم ”انسان‌شناختی بیدل“ به‌‌آدرس ایمیل و یا شماره تلفن
-              انتشارات انسان در تماس شوید. 
-          </p>
       </div>
           <Grid className={classes.gridSpace} container spacing={2}>
             <Grid item xs={12} sm={12} md={4} lg={4}>
@@ -68,13 +74,16 @@ export default function CenteredGrid() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
+              <p className={classes.para1}>
+              علاقه‌مندان به‌ هدف دریافت مجلد دوم انسان‌شناختی بیدل به گزینه های ذیل مراجعه بفرمایند.
+              </p>
               <Box
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                padding="2vh 0"
+                padding="0"
               >
-              <img alt="purchase" src={purchase} height="500vh" width="100%"/>
+                <BuyOptionMenu/>
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>

@@ -6,6 +6,7 @@ import './Buy.css';
 import FlipImage from '../Component/FlipImage';
 import Amazon from '../Assets/Amazon.svg';
 import Paypal from '../Assets/PayPal.svg';
+import Logo from '../Assets/buylogo.png'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -55,15 +56,16 @@ export default function CenteredGrid() {
             </svg>
         </div>
         <p className={classes.h1}>خریداری کتاب</p>
-        <p className={classes.para}>مجلدات انسان‌شناختی بیدل از طریق آمازون و پی‌پال قابل دریافت است. علاقه‌مندان به‌ هدف دریافت هریکی از مجلدات این‌ اثر به لینک های ذیل مراجعه بفرمایند.</p>
+        <p className={classes.para}>علاقه‌مندان به‌ هدف دریافت هریکی از مجلدات انسان‌شناختی بیدل به لینک های ذیل مراجعه بفرمایند.</p>
       </div>
       
       <div className={classes.root}>
           <Grid className={classes.gridSpace} container spacing={1}>
                 <Grid item xs={12} sm={12} md={12} lg={12}>
                     <Box className={classes.paper}>
+                        <FlipImage aks={Logo} text="خریداری مستقیم از انتشرات انسان" />
                         <FlipImage aks={Amazon} text="خریداری از طریق آمازون/Amazon" link="/Amazon"/>
-                        <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال/PayPal" link="/Paypal"/>
+                        <FlipImage aks={Paypal} text="خریداری از طریق پی‌پال/PayPal" link="https://paypal.me/ensanpublishers"/>
                     </Box>
                 </Grid>
           </Grid>

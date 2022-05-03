@@ -5,7 +5,7 @@ import { Box } from '@material-ui/core';
 import oneside from '../Assets/BedilVol4.jpg';
 import BedilVol41 from '../Assets/BedilVol41.jpg';
 import Kawishwriting from '../Assets/Kawishwriting.jpg';
-import purchase from '../Assets/ebook.svg';
+import BuyOptionMenu from '../Component/BuyOptionMenu4';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,6 +44,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '1em',
     direction: 'ltr',
   },
+  para1: {
+    fontFamily: 'vazir',
+    lineHeight: '2.4em',
+    textAlign: 'center',
+    fontSize: '1.5em',
+    fontWeight: 8500,
+    marginTop: '4em',
+    color: '#3F72AF'
+  },
   gridSpace:{
     display: 'flex',
     justifyContent: 'center'
@@ -68,6 +77,19 @@ export default function CenteredGrid() {
                 <img src={oneside} alt="kawish" height="auto" width="390vw" />
               </Box>
             </Grid>
+            <Grid item xs={12} sm={12} md={4} lg={4}>
+              <p className={classes.para1}>
+              علاقه‌مندان به‌ هدف دریافت کتاب مذکور به گزینه های ذیل مراجعه بفرمایند.
+              </p>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                padding="0"
+              >
+                <BuyOptionMenu/>
+              </Box>
+            </Grid>  
             <Grid item xs={12} sm={12} md={4} lg={4}>
               <Box
                 display="flex"
@@ -154,23 +176,6 @@ export default function CenteredGrid() {
     1401</p>
 
       </div>
-        <a target="_blank" rel="noreferrer"  href='https://www.amazon.com/dp/0578357828?ref=myi_title_dp'>
-          <Grid className={classes.gridSpace} container spacing={2}>
-            <Grid item xs={12} sm={12} md={6} lg={6}>
-                  <p className={classes.para2}>
-                  خریداری کتاب از آمازون
-                  </p>
-                <Box
-                  display="flex"
-                  justifyContent="center"
-                  alignItems="center"
-                  padding="2vh 0"
-                >
-                  <img alt="purchase" src={purchase} height="500vh" width="100%"/>
-                </Box>
-              </Grid>       
-          </Grid>
-        </a>
       </div>
     </div>
    );    

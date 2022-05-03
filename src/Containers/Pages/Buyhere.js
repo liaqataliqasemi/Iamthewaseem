@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import './Amazon.css';
-import BuyBookCard from '../Component/BuyAmazon';
+import BuyBookCard from '../Component/BuyBookCard';
 
 
 
@@ -58,12 +58,12 @@ export default function CenteredGrid() {
                     <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
                 </svg>
             </div>
-            <p className={classes.h1}> خریداری کتاب از آمازون/Amazon</p>
-            <p className={classes.paratop}>مجلدات انسان‌شناختی بیدل از طریق لینک های ذیل قابل دریافت است.</p>
+            <p className={classes.h1}>خریداری کتاب</p>
+            <p className={classes.paratop}>اکنون شما می‌توانید هر چهار مجلدات انسان‌شناختی بیدل را از اینجا بدست آورید.</p>
         </div>
         <Grid  container spacing={1}>
             <Grid item xs={12} sm={12} md={12} lg={12}>
-                <BuyBookCard/>
+                <BuyBookCard/>  
             </Grid>
         </Grid>
     </div>

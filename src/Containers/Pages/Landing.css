@@ -49,6 +49,13 @@
     padding: 1rem 0;
     text-align: center;
 }
+.title8{
+    font-size: 2.6em;
+    font-family: Titr;
+    color: #112D4E;
+    margin: 1em 0 2em 0;
+    text-align: center;
+}
 .para{
     font-size: clamp(1.5rem, 2vw, 5rem);
     line-height: clamp(2rem, 4vw, 5rem);

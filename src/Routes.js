@@ -11,11 +11,16 @@ import Ensan2 from './Containers/Pages/Ensan2';
 import Ensan3 from './Containers/Pages/Ensan3';
 import Ensan4 from './Containers/Pages/Ensan4';
 import Amazon from './Containers/Pages/Amazon';
+ // eslint-disable-next-line
 import Paypal from './Containers/Pages/Paypal';
+import BuyHere from './Containers/Pages/Buyhere';
 import Buy from './Containers/Pages/Buy';
 import Contact from './Containers/Pages/Contact';
 import Construction from './Containers/Pages/Construction'
-
+import Volume1 from './Containers/Pages/Volume1';
+import Volume2 from './Containers/Pages/Volume2';
+import Volume3 from './Containers/Pages/Volume3';
+import Volume4 from './Containers/Pages/Volume4';
 
 class Routes extends Component {
     render(){
@@ -35,8 +40,14 @@ class Routes extends Component {
                             <Route path="/PayPal" exact component={Construction}/>
                             <Route path="/Books" exact component={Books}/>
                             <Route path="/Buy" exact component={Buy}/>
+                            <Route path="/BuyHere" exact component={BuyHere}/>
+                            <Route path="/Volume1" exact component={Volume1}/>
+                            <Route path="/Volume2" exact component={Volume2}/>
+                            <Route path="/Volume3" exact component={Volume3}/>
+                            <Route path="/Volume4" exact component={Volume4}/>
                             <Route path="/ContactUs" exact component={Contact}/>
                             <Route path="*" exact component={NotFound}/>
+
                         </Switch>
                     </BrowserRouter>
                 </Layout>

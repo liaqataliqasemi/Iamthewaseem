@@ -30,7 +30,7 @@ strong{
     line-height: 3em;
 }
 .ending{
-    background: rgb(229,234,245);
+    background: #e5eaf5;
     background: linear-gradient(180deg, rgba(229,234,245,1) 41%, rgba(255,255,255,1) 100%);
 }
 .header{

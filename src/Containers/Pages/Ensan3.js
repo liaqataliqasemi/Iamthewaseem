@@ -7,6 +7,7 @@ import { Box } from '@material-ui/core';
 import oneside from '../Assets/BedilVol3.jpg';
 import twoside from '../Assets/BedilVol32.jpg';
 import purchase from '../Assets/ecomm3.svg';
+import BuyOptionMenu from '../Component/BuyOptionMenu3';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,6 +33,15 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '1.5em',
     fontWeight: 8500,
     marginTop: '1em'
+  },
+  para1: {
+    fontFamily: 'vazir',
+    lineHeight: '2.4em',
+    textAlign: 'center',
+    fontSize: '1.5em',
+    fontWeight: 8500,
+    marginTop: '1em',
+    color: '#3F72AF'
   },
   gridSpace:{
     display: 'flex',
@@ -68,13 +78,16 @@ export default function CenteredGrid() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
+              <p className={classes.para1}>
+              علاقه‌مندان به‌ هدف دریافت مجلد سوم انسان‌شناختی بیدل به گزینه های ذیل مراجعه بفرمایند.
+              </p>
               <Box
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                padding="2vh 0"
-              > 
-                <img alt="purchase" src={purchase} height="500vh" width="100%"/>
+                padding="0"
+              >
+                <BuyOptionMenu/>
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4}>
