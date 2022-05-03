@@ -158,7 +158,7 @@ const LandingPage = () => {
                                     زیبا تازه از چاپ برآمده است، فراچنگ آورید.
                                 <br/>
                                 <br/>
-                                <Buy link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از ما" type="contained"/>
+                                <Buy link="/Volume4" text="خرید از ما" type="contained"/>
                                 <br/>
                                 <Buy link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از آمازون" type="contained"/>
                                 <br/>
