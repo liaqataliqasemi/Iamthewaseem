@@ -31,7 +31,7 @@ export default function ControlledAccordions() {
           <Avatar sx={{ width: 50, height: 50 }} alt="Ensan Publishers" src={Ensan} />
           </Typography>
           
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF', fontSize: '1.5em' }}>خرید مستقیم از انتشارات انسان</Typography>
+          <Typography sx={{  fontFamily: 'vazir', color: '#3F72AF', fontSize: '1.5em' }}>خرید مستقیم از انتشارات انسان</Typography>
         </AccordionSummary>
         <AccordionDetails>
                 <Box
@@ -53,7 +53,7 @@ export default function ControlledAccordions() {
           <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>
           <Avatar sx={{ width: 50, height: 50 }} alt="Amazon" src={Amazon} />
             </Typography>
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir' , color: '#3F72AF', fontSize: '1.5em'}}>
+          <Typography sx={{  fontFamily: 'vazir' , color: '#3F72AF', fontSize: '1.5em'}}>
           خرید از ویب‌سایت آمازون
           </Typography>
         </AccordionSummary>
@@ -77,7 +77,7 @@ export default function ControlledAccordions() {
           <Typography sx={{ width: '33%', flexShrink: 0, fontFamily: 'titr', fontSize: '1.2em', color: '#112D4E' }}>
           <Avatar sx={{ width: 50, height: 50 }} alt="Paypal" src={Paypal} />
           </Typography>
-          <Typography sx={{ color: 'text.secondary', fontFamily: 'vazir', color: '#3F72AF', fontSize: '1.5em' }}>
+          <Typography sx={{  fontFamily: 'vazir', color: '#3F72AF', fontSize: '1.5em' }}>
           خرید از پی‌‌پال 
           </Typography>
         </AccordionSummary>

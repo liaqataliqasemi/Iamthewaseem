@@ -1,5 +1,4 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
+import React, { useRef } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
@@ -8,8 +7,10 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+import Button from '@mui/material/Button';
 import './Style.css';
-
+import Swal from 'sweetalert2'
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -17,10 +18,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
   },
   form: {
     width: '100%', // Fix IE 11 issue.
@@ -38,12 +35,42 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+
 export default function SignUp() {
   const classes = useStyles();
-  const { register, handleSubmit, errors } = useForm();
-  const onSubmit = (data, event) => {
-
-    event.preventDefault();
+  const form = useRef();  
+  const { register, errors } = useForm();
+  const Swal = require('sweetalert2')
+  const Toast = Swal.mixin({
+    toast: true,
+    width: 600,
+    position: 'bottom-left',
+    color: '#112D4E',
+    background: '#fff',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  const sendEmail = (e) => {
+    e.preventDefault();
+    
+    emailjs.sendForm('service_t9iih4j', 'Contact', form.current, 'erfixir-OJPouYs8M')
+      .then((result) => {
+        Toast.fire({
+          icon: 'success',
+          title: `<p style={{fontFamily: 'vazir', textAlign: 'justify', fontSize: '11px'}}>پیام شما دریافت شد.</p>`
+        })
+      }, (error) => {
+        Toast.fire({
+          icon: 'warning',
+          title: `<p style={{fontFamily: 'vazir', textAlign: 'justify', fontSize: '11px'}}>لطفاً دوباره کوشش کنید.</p>`
+        })
+      });
+      e.target.reset();
   }
   return (
     <Container id={'form'} component="main" maxWidth="xs">
@@ -54,7 +81,7 @@ export default function SignUp() {
             <div>فورم تماس</div>
         </div>
         </Typography>
-        <form onSubmit={handleSubmit(onSubmit)} className={classes.form} noValidate>
+        <form ref={form} onSubmit={sendEmail} className={classes.form} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -132,7 +159,6 @@ export default function SignUp() {
                                  ایمیل آدرس
                     </Typography>}
                 name="email"
-                autoComplete="email"
               />
             </Grid>
             <Grid item xs={12}>
@@ -159,7 +185,6 @@ export default function SignUp() {
                 error={Boolean(errors.phonenumber)}
                 helperText={errors.phonenumber?.message}
                 id="phonenumber"
-                autoComplete="phone-number"
               />
               </Grid>
               <Grid item xs={12}>
@@ -195,7 +220,7 @@ export default function SignUp() {
             variant="contained"
             color="primary"
             className={classes.submit}
-            style={{backgroundColor: '#3F72AF'}}
+            style={{backgroundColor: '#3F72AF', marginTop: '2em'}}
           >
           {
             <Typography variant='h6' className='nassim' style={{fontWeight: 'bold'}}>

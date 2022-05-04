@@ -3,11 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ContactCard from '../Component/ContactCard';
-import FlipImage from '../Component/FlipImage'; 
 import { Box } from '@material-ui/core';
 import oneside from '../Assets/BedilVol1.jpg';
 import twoside from '../Assets/BedilVol12.jpg';
-// eslint-disable-next-line
+
 
 const useStyles = makeStyles((theme) => ({
   root: {

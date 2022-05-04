@@ -2,12 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import ContactCard from '../Component/ContactCard';
-import FlipImage from '../Component/FlipImage'; 
+import ContactCard from '../Component/ContactCard'
 import { Box } from '@material-ui/core';
 import oneside from '../Assets/BedilVol2.jpg';
 import twoside from '../Assets/BedilVol22.jpg';
-// eslint-disable-next-line
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
