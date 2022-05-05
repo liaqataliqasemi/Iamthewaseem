@@ -58,7 +58,7 @@ export default function SignUp() {
   const sendEmail = (e) => {
     e.preventDefault();
     
-    emailjs.sendForm('service_t9iih4j', 'Contact', form.current, 'erfixir-OJPouYs8M')
+    emailjs.sendForm('service_8fow9lg', 'Contact', form.current, 'xi7-WnVPounMRePRq')
       .then((result) => {
         Toast.fire({
           icon: 'success',
