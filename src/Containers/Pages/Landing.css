@@ -57,15 +57,15 @@
     text-align: center;
 }
 .para{
-    font-size: clamp(1.5rem, 2vw, 5rem);
-    line-height: clamp(2rem, 4vw, 5rem);
-    font-family: vazir;
-    text-align: center;
-    direction: rtl;
+    font-size: clamp('1.5rem, 2vw, 5rem !important') ;
+    line-height: clamp('2rem, 4vw, 5rem !important') ;
+    font-family: titr !important;
+    text-align: center !important;
+    direction: rtl !important;
     color: #112D4E;
-    padding: 0!important;
-    margin: 0!important;
-    text-shadow: 2px 2px #ffffff;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-shadow: 2px 2px #ffffff !important;
 }
 .para2{
     font-size: 1.6em;

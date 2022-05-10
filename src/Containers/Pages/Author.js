@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
       padding: '0.2em 20vw'
     },
-    h1:{
+    header1:{
       fontFamily: 'vazir',
       textAlign: 'center',
       fontSize: '2rem'
@@ -49,7 +49,7 @@ const LandingPage = () => {
                 </div>
             </div>
             <div className='header2' style={{background: '#fafafa'}}>
-                <h1 style={{background: '#fafafa'}} className={classes.h1}>زندگی و آثار محترم استاد دکتر سید نورالحق کاوش</h1>  
+                <h1 style={{background: '#fafafa'}} className={classes.header1}>زندگی و آثار محترم استاد دکتر سید نورالحق کاوش</h1>  
             </div>
             <Box display="flex" container flexWrap="wrap" justifyContent="center" spacing={3}>
                 <Grid item xs={12} sm={12} md={12} lg={12}>
