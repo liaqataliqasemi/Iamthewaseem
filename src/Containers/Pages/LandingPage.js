@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { Box, TableBody } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 import './Landing.css';
 import FlipImage from '../Component/FlipImage';
 import Vol4 from '../Assets/Vol4.jpg';
@@ -14,6 +14,8 @@ import BookGallery2 from '../Component/BookCardGallery2';
 import BuyNew from '../Component/BuyButtonNewTab';
 import { useState, useEffect } from 'react';
 import DOMPurify from "dompurify";
+import ReactHtmlParser from 'react-html-parser';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -62,7 +64,7 @@ const LandingPage = () => {
                         <p  className='title'>
                             {data.title}
                         </p>
-                        <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data.body, {FORCE_BODY: true})}} className={classes.para} />
+                         <div dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(data.body, {FORCE_BODY: true})}} className='para' />
                     </div>
                 ))}
             </div>
