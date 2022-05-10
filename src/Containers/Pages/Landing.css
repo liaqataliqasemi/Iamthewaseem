@@ -58,8 +58,8 @@
 }
 .para, .para>p, .para>h1{
     /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
-    font-size: 1.5rem!important;
-    line-height: 3rem!important ;
+    font-size: 2rem!important;
+    line-height: 4rem!important ;
     font-family: vazir !important;
     text-align: center !important;
     direction: rtl !important;
@@ -68,6 +68,49 @@
     margin: 0 !important;
     text-shadow: 2px 2px #ffffff !important;
 }
+
+@media screen and (max-width:320px) {
+    .para, .para>p, .para>h1{
+        /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
+        font-size: 1rem!important;
+        line-height: 2rem!important ;
+        font-family: vazir !important;
+        text-align: center !important;
+        direction: rtl !important;
+        color: #112D4E;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-shadow: 2px 2px #ffffff !important;
+    }
+  }
+  @media screen and (min-width:321px) and (max-width:768px) {
+    .para, .para>p, .para>h1{
+        /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
+        font-size: 1.2rem!important;
+        line-height: 2.5rem!important ;
+        font-family: vazir !important;
+        text-align: center !important;
+        direction: rtl !important;
+        color: #112D4E;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-shadow: 2px 2px #ffffff !important;
+    }
+  }
+  @media screen and (min-width:769px) and (max-width: 1024px) {
+    .para, .para>p, .para>h1{
+        /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
+        font-size: 2rem!important;
+        line-height: 3rem!important ;
+        font-family: vazir !important;
+        text-align: center !important;
+        direction: rtl !important;
+        color: #112D4E;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-shadow: 2px 2px #ffffff !important;
+    }
+  }
 .para2{
     font-size: 1.6em;
     line-height: 3rem;
