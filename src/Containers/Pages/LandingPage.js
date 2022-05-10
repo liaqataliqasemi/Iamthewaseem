@@ -37,8 +37,9 @@ const useStyles = makeStyles((theme) => ({
 const LandingPage = () => {
     const classes = useStyles();
     const [texts, setTexts] = useState([]);
+    const [book, setBook] = useState([]);
     const fetchData =() => {
-        fetch('http://127.0.0.1:8000/api/welcome', {
+        fetch('/api/welcome', {
             headers : { 
               'Content-Type': 'application/json',
               'Accept': 'application/json'
@@ -54,7 +55,25 @@ const LandingPage = () => {
     useEffect(() => {
         // GET request using fetch inside useEffect React hook
         fetchData()
+        fetchBookData()
     }, []);
+
+    const fetchBookData = () =>{
+        fetch('/api/book/get-last', {
+            headers : { 
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+             }
+          })
+        .then(response => response.json())
+        .then(data =>{
+            console.log(data)
+            setBook(data)
+        } );
+    } 
+            
+    
+    
     const getWelcomeText = () => {
         return(
             <div>
@@ -69,45 +88,46 @@ const LandingPage = () => {
             </div>
         )
     }
+
+    const getBookText = () => {
+        return (
+            <Grid container spacing={1} style={{marginBottom: '4vh'}}>
+                    <Grid item xs={12} sm={12} md={8} lg={8}>
+                    <Box className='center'>
+                    <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(book.body, {FORCE_BODY: true})}} className='para2'/>
+                        <br/>
+                        <br/>
+                        <Buy link="/Volume4" text="خرید از انتشارات انسان" type="contained"/>
+                        <br/>
+                        <BuyNew link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از آمازون" type="contained"/>
+                        <br/>
+                        <BuyNew link="https://www.paypal.com/paypalme/ensanpublishers" text="خرید از پی‌پال" type="contained"/>
+                    </Box>
+                </Grid>
+                <Grid item xs={12} sm={12} md={4} lg={4}>
+                <Box
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    margin= "25px 0"
+                >
+                
+                    {/* <img src={book.en_image}/> */}
+                    <FlipImage aks={book.pr_image} text={book.title}/>
+                </Box>
+            </Grid>
+            
+        </Grid>
+
+        )
+    }
     return(
             <div className={classes.root}>
                 <div container className='backgroundaks'>
                    {getWelcomeText()}
                 </div>
                 <div>
-                    <Grid container spacing={1} style={{marginBottom: '4vh'}}>
-                        <Grid item xs={12} sm={12} md={8} lg={8}>
-                            <Box className='center'>
-                                <p className='para2'> 
-                                    با چاپ و نشر مجلد چهارم انسان‌شناختی بیدل (بخش پنجم پارۀ یکم) ازجمله حاوی
-                                    معاییر روی‌کردهای اخلاقی بیدل یا اصول فلسفۀ اخلاق او، از سوی ”انتشارات
-                                    انسان“، انتظار طولانی شما به‌پایان آمد.
-                                    اگر می‌خواهید شالوده‌معاییر فلسفۀ اخلاق بیدل بربنیاد هستی‌شناختی،
-                                    جهان‌شناختی، انسان‌شناختی، شناخت‌شناختی و روش‌شناختی-اش را با خود داشته
-                                    باشید، از طریق انتشارات انسان، این اثر از پژوهش‌های خامۀ استاد دکتر سید
-                                    نورالحق کاوش را که به‌گونۀ جزوه‌بندی‌شده و با پُشتی سخت و کیفیت بس‌عالی و
-                                    زیبا تازه از چاپ برآمده است، فراچنگ آورید.
-                                <br/>
-                                <br/>
-                                <Buy link="/Volume4" text="خرید از انتشارات انسان" type="contained"/>
-                                <br/>
-                                <BuyNew link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از آمازون" type="contained"/>
-                                <br/>
-                                <BuyNew link="https://www.paypal.com/paypalme/ensanpublishers" text="خرید از پی‌پال" type="contained"/>
-                                </p>
-                            </Box>
-                        </Grid>
-                        <Grid item xs={12} sm={12} md={4} lg={4}>
-                            <Box
-                                display="flex"
-                                justifyContent="center"
-                                alignItems="center"
-                                margin= "25px 0"
-                            >
-                                <FlipImage aks={Vol4} text="انسان‌شناختی بیدل بخش پنجم"/>
-                            </Box>
-                        </Grid>
-                    </Grid>
+                   {getBookText()}
                 </div>
                 <div className='filler'>
                     <p  className='title2'>
