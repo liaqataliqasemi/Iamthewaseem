@@ -97,11 +97,12 @@ const LandingPage = () => {
                     <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(book.body, {FORCE_BODY: true})}} className='para2'/>
                         <br/>
                         <br/>
+                        <div style={{marginRight: '5em', lineHeight: '3em'}}>
                         <Buy link="/Volume4" text="خرید از انتشارات انسان" type="contained"/>
                         <br/>
                         <BuyNew link="https://www.amazon.com/dp/0578357828?ref=myi_title_dp" text="خرید از آمازون" type="contained"/>
                         <br/>
-                        <BuyNew link="https://www.paypal.com/paypalme/ensanpublishers" text="خرید از پی‌پال" type="contained"/>
+                        <BuyNew link="https://www.paypal.com/paypalme/ensanpublishers" text="خرید از پی‌پال" type="contained"/></div>
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={12} md={4} lg={4}>

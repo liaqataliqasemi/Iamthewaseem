@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 export default function IconLabelButtons(props) {
   return (
     <Stack direction="row" spacing={2}>
-      <Button href={props.link} style={{backgroundColor: '#EEEEEE', color: '#fff!important', width: '16em'}} variant={props.type} startIcon={<ShoppingCartOutlinedIcon style={{ fontSize: '2em'}} />}>
+      <Button href={props.link} style={{backgroundColor: '#EEEEEE', color: '#fff!important', width: '17em'}} variant={props.type} startIcon={<ShoppingCartOutlinedIcon style={{ fontSize: '2em'}} />}>
       &nbsp;
         <Typography variant='button' size="large" style={{fontFamily: 'nassim', fontSize: '1.4em', color: '#fff!important'}} >
             {props.text}
