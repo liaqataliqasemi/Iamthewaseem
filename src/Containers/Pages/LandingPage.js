@@ -14,7 +14,6 @@ import BookGallery2 from '../Component/BookCardGallery2';
 import BuyNew from '../Component/BuyButtonNewTab';
 import { useState, useEffect } from 'react';
 import DOMPurify from "dompurify";
-import ReactHtmlParser from 'react-html-parser';
 
 
 const useStyles = makeStyles((theme) => ({
