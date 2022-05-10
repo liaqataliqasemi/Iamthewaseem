@@ -3,10 +3,10 @@ body{
     text-align:"justify";
 }
 p{
-    margin: 0 5vw;
+    margin: 0 2vw 0 2vw;
     font-family: 'vazir';
     font-size: large;
-}
+} 
 header1{
     font-size: 1.3rem;
 }
