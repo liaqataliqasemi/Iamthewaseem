@@ -23,6 +23,7 @@
     "axios": "^0.27.2",
     "date-fns": "^2.19.0",
     "dompurify": "^2.3.6",
+    "http-proxy-middleware": "^2.0.6",
     "jss": "^10.9.0",
     "jss-rtl": "^0.3.0",
     "markdown-to-jsx": "^7.1.2",
@@ -32,6 +33,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hook-form": "^6.15.4",
+    "react-html-parser": "^2.0.2",
     "react-photo-album": "^1.13.1",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.0",
@@ -74,5 +76,6 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "proxy": "http://localhost:8000"
 }

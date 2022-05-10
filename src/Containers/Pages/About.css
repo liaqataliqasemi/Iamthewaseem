@@ -32,4 +32,6 @@
     fill: #005691;
 }
 
-
+.paragraph>*{
+    margin: 0 !important
+}

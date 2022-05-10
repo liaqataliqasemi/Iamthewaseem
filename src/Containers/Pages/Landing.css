@@ -56,17 +56,80 @@
     margin: 1em 0 2em 0;
     text-align: center;
 }
-.para{
-    font-size: clamp('1.5rem, 2vw, 5rem !important') ;
-    line-height: clamp('2rem, 4vw, 5rem !important') ;
-    font-family: titr !important;
+.para, .para>p, .para>h1{
+    /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
+    font-size: 1.9vw!important;
+    line-height: 3.8vw!important ;
+    font-family: vazir !important;
     text-align: center !important;
     direction: rtl !important;
     color: #112D4E;
     padding: 0 !important;
     margin: 0 !important;
     text-shadow: 2px 2px #ffffff !important;
+    font-weight: 300 !important;
 }
+
+@media screen and (max-width:320px) {
+    .para, .para>p, .para>h1{
+        /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
+        font-size: 7vw!important;
+        line-height: 9vw!important ;
+        font-family: vazir !important;
+        text-align: center !important;
+        direction: rtl !important;
+        color: #112D4E;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-shadow: 2px 2px #ffffff !important;
+        font-weight: 300 !important;
+    }
+  }
+  @media screen and (min-width:321px) and (max-width:450px) {
+    .para, .para>p, .para>h1{
+        /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
+        font-size: 6vw!important;
+        line-height: 8vw!important ;
+        font-family: vazir !important;
+        text-align: center !important;
+        direction: rtl !important;
+        color: #112D4E;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-shadow: 2px 2px #ffffff !important;
+        font-weight: 300 !important;
+    }
+  }
+  @media screen and (min-width:450px) and (max-width:768px) {
+    .para, .para>p, .para>h1{
+        /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
+        font-size: 4.4vw!important;
+        line-height: 5.5vw!important ;
+        font-family: vazir !important;
+        text-align: center !important;
+        direction: rtl !important;
+        color: #112D4E;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-shadow: 2px 2px #ffffff !important;
+        font-weight: 300 !important;
+    }
+  }
+  @media screen and (min-width:769px) and (max-width: 1024px) {
+    .para, .para>p, .para>h1{
+        /* font-size: "clamp('1.5rem, 2vw, 5rem !important')" ; */
+        font-size: 3vw!important;
+        line-height: 5vw!important ;
+        font-family: vazir !important;
+        text-align: center !important;
+        direction: rtl !important;
+        color: #112D4E;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-shadow: 2px 2px #ffffff !important;
+        font-weight: 300 !important;
+    }
+  }
 .para2{
     font-size: 1.6em;
     line-height: 3rem;
